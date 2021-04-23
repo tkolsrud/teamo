@@ -24,5 +24,5 @@ mongoose.connection.on("disconnected", function () {
 });
 
 module.exports = {
-
-}
+    Car: require("./Car")
+};
