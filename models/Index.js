@@ -2,7 +2,9 @@
 const mongoose = require("mongoose");
 
 // connect to mongodb
-const dbUrl = "mongodb://localhost:27017/carsdb";
+require('dotenv').config();
+
+const dbUrl = process.env.MONGO_URI;
 
 // connect mongoose
 mongoose
@@ -17,6 +19,7 @@ mongoose
     })
     .catch(function (err) {
         console.log("MongoDB error");
+        console.log(err);
     });
 
 mongoose.connection.on("disconnected", function () {
