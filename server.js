@@ -32,12 +32,11 @@ app.use(methodOverride("_method"));
 /* === Routes/Controllers === */
 // Welcome
 app.get("/", function (req, res) {
-<<<<<<< HEAD
-    res.send("Welcome");
-=======
-    res.render("welcome");
->>>>>>> submaster
+    res.render("Welcome");
 });
+
+// site controller
+app.use('/', controllers.site);
 
 
 
