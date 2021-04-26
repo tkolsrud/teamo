@@ -4,12 +4,12 @@
   "description": "Tom Kimo Project One",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "open http://localhost:5000 & nodemon server.js "
   },
   "repository": {
     "type": "git",
-    "url": "https://git.generalassemb.ly/tkolsrud/Teamo_projectOne.git",
-    "dev": "open http://localhost:5000 & nodemon server.js "
+    "url": "https://git.generalassemb.ly/tkolsrud/Teamo_projectOne.git"
   },
   "keywords": [
     "Project",
@@ -20,10 +20,12 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-mongo": "^4.4.1",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.12.5"
+    "mongoose": "^5.12.5",
+    "nodemon": "^2.0.7"
   }
 }
