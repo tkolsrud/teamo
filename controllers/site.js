@@ -6,5 +6,8 @@ const db = require('../models')
 router.get('/site', function (req, res) {
     res.render('site/about');
 });
-
+/***** Help Route *********/
+router.get('/site', function (req, res) {
+    res.render('site/help');
+});
 module.exports = router;
