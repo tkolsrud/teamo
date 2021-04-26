@@ -3,6 +3,7 @@ const express = require("express");
 const methodOverride = require("method-override");
 const sesson = require("express-session");
 const MongoStore = require("connect-mongo");
+const db = require('./models');
 
 /* === Internal Modules === */
 const controllers = require("./controllers");
@@ -11,6 +12,7 @@ const controllers = require("./controllers");
 const app = express();
 
 /* === Configuration === */
+require('dotenv').config();
 const PORT = 5000;
 
 app.set("view engine", "ejs");
@@ -30,7 +32,7 @@ app.use(methodOverride("_method"));
 /* === Routes/Controllers === */
 // Home
 app.get("/", function (req, res) {
-    res.render("home");
+    res.send("home");
 });
 
 
