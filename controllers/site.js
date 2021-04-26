@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../models')
 
 /***** About Route *********/
-router.get('/site', function (req, res) {
+router.get('/about', function (req, res) {
     res.render('site/about');
 });
 
