@@ -30,9 +30,9 @@ app.use(methodOverride("_method"));
 
 
 /* === Routes/Controllers === */
-// Home
+// Welcome
 app.get("/", function (req, res) {
-    res.send("home");
+    res.render("welcome");
 });
 
 
