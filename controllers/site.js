@@ -11,11 +11,11 @@ router.get('/about', function (req, res) {
     res.render('site/about');
 });
 /***** Help Route *********/
-<<<<<<< HEAD
+
 router.get('/site', function (req, res) {
     res.render('site/help');
 });
-=======
+
 router.get('/help', function (req, res) {
     res.render('site/help');
 });
@@ -66,5 +66,4 @@ router.get('/show', function (req, res) {
 router.get('/newcar', function (req, res) {
     res.render('site/newcar');
 });
->>>>>>> submaster
 module.exports = router;
