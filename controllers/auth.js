@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcruptjs');
+const bcrypt = require('bcryptjs');
 const db = require('../models');
 
 /** Register Route ***/
