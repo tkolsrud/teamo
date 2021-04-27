@@ -22,11 +22,32 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 // method override
 app.use(methodOverride("_method"));
-// middler to serve public as static files (css)
+// middleware to serve public as static files (css)
+app.use(express.static(`${__dirname}/public`));
 
 
 // setup session middleware
+app.use(session({
+    store: MongoStore.create({ mongoUrl: process.end.MONGO_URI }),
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+}));
 
+// logger middleware
+app.use(function (req, res, next) {
+    console.log(`${req.method} - ${req.url}`);
+    console.log(req.session);
+    next();
+});
+
+// authRequired middleware
+const authRequired = function (req, res, next) {
+    if (req.session.currentUser) {
+        return next();
+    }
+    return res.redirect('/login');
+};
 
 
 /* === Routes/Controllers === */

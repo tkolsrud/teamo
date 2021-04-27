@@ -15,36 +15,21 @@ router.get('/help', function (req, res) {
     res.render('site/help');
 });
 
-/***** Home Route *********/
-router.get('/home', (req, res) => {
-    res.render('site/home');
-});
+/***** Index Route *********/
 
-// This is the code that lets you grab the field data
-router.post('/home', async (req, res) => {
+router.get('/index', async (req, res) => {
     try {
         const query = req.query;
-        console.log(req.query);
+        console.log(query);
 
         const allCars = await db.Car.find(query);
         const context = { cars: allCars };
 
-        return console.log(context);
+        return res.render('site/index', context);
     } catch (err) {
         console.log(err);
         return res.send(err);
     }
-});
-
-
-/***** Index Route *********/
-router.get('/index', function (req, res) {
-    db.Car.find({}, function (err, foundCars) {
-        if (err) return res.send(err);
-        const context = { cars: foundCars };
-        console.log(context);
-        res.render('site/index', context);
-    })
 });
 
 /***** Collection Route *********/
@@ -53,8 +38,17 @@ router.get('/collection', function (req, res) {
 });
 
 /***** Show Route *********/
-router.get('/show', function (req, res) {
-    res.render('site/show');
+router.get('/site/:id', function (req, res) {
+    const id = req.params.id;
+    db.Car.findById(id, function (err, foundCar) {
+        if (err) {
+            console.log(err);
+            return res.send('Server Error');
+        } else {
+            const context = { car: foundCar };
+            return res.render('site/show', context);
+        }
+    })
 });
 
 /***** New Car Route *********/
