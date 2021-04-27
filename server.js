@@ -1,7 +1,7 @@
 /* === External Modules === */
 const express = require("express");
 const methodOverride = require("method-override");
-const sesson = require("express-session");
+const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const db = require('./models');
 
@@ -26,28 +26,28 @@ app.use(methodOverride("_method"));
 app.use(express.static(`${__dirname}/public`));
 
 
-// setup session middleware
-app.use(session({
-    store: MongoStore.create({ mongoUrl: process.end.MONGO_URI }),
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-}));
+// // setup session middleware
+// app.use(session({
+//     store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false,
+// }));
 
-// logger middleware
-app.use(function (req, res, next) {
-    console.log(`${req.method} - ${req.url}`);
-    console.log(req.session);
-    next();
-});
+// // logger middleware
+// app.use(function (req, res, next) {
+//     console.log(`${req.method} - ${req.url}`);
+//     console.log(req.session);
+//     next();
+// });
 
-// authRequired middleware
-const authRequired = function (req, res, next) {
-    if (req.session.currentUser) {
-        return next();
-    }
-    return res.redirect('/login');
-};
+// // authRequired middleware
+// const authRequired = function (req, res, next) {
+//     if (req.session.currentUser) {
+//         return next();
+//     }
+//     return res.redirect('/login');
+// };
 
 
 /* === Routes/Controllers === */
