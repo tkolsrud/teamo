@@ -9,10 +9,28 @@ const cars = [
         year: "1965"
     },
     {
-        manufacturer: "lambo",
+        manufacturer: "Lambo",
         country: "Italy",
         model: "countache",
         year: "1980"
+    },
+    {
+        manufacturer: "Audi",
+        country: "Germany",
+        model: "R8",
+        year: "2015"
+    },
+    {
+        manufacturer: "BMW",
+        country: "Germany",
+        model: "M4",
+        year: "2018"
+    },
+    {
+        manufacturer: "Jaguar",
+        country: "UK",
+        model: "XF",
+        year: "2020"
     }
 ];
 

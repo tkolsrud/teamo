@@ -38,6 +38,8 @@ app.get("/", function (req, res) {
 // site controller
 app.use('/', controllers.site);
 
+app.use('/', controllers.auth);
+
 
 
 
