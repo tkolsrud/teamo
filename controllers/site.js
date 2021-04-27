@@ -16,9 +16,26 @@ router.get('/help', function (req, res) {
 });
 
 /***** Home Route *********/
-router.get('/home', function (req, res) {
-    res.render('site/home', context);
+router.get('/home', (req, res) => {
+    res.render('site/home');
 });
+
+// This is the code that lets you grab the field data
+router.post('/home', async (req, res) => {
+    try {
+        const bodyData = req.body;
+        console.log(req.body);
+
+        const allCars = await db.Car.find(bodyData);
+        const context = { cars: allCars };
+
+        return console.log(context);
+    } catch (err) {
+        console.log(err);
+        return res.send(err);
+    }
+});
+
 
 /***** Index Route *********/
 router.get('/index', function (req, res) {
