@@ -11,25 +11,24 @@
 <body>
     <h1>CarBank</h1>
     <h3>Welcome</h3>
+    <!--Button-->
+    <input type="submit" value="Sign out">
     <!--Navigation bar-->
     <nav> Home | About | Your Collections | Help </nav>
     <h2>Matching vehicles</h2>
-    <ul>
-        <% cars.forEach(car=>{%>
-            <li>
-                <a href="/site/<%= car._id %>">
-                    <%=car.manufacturer%>
-                </a>
-            </li>
-            <% }) %>
-    </ul>
     <!--Images-->
     <img src=" ">
-    <h4>Car name</h4>
-    <img src=" ">
-    <h4>Feature </h4>
     <!--Button-->
     <input type="submit" value="Details">
+    <input type="submit" value="Delete">
+    <img src=" ">
+    <!--Images-->
+    <img src=" ">
+    <!--Button-->
+    <input type="submit" value="Details">
+    <input type="submit" value="Delete">
+    <h4>Feature </h4>
+
 </body>
 
 </html>
