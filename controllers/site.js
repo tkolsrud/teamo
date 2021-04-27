@@ -11,6 +11,11 @@ router.get('/about', function (req, res) {
     res.render('site/about');
 });
 /***** Help Route *********/
+
+router.get('/site', function (req, res) {
+    res.render('site/help');
+});
+
 router.get('/help', function (req, res) {
     res.render('site/help');
 });

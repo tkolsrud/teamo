@@ -68,3 +68,5 @@ app.use('/', controllers.auth);
 app.listen(PORT, function () {
     console.log(`Car shop is live at http://localhost:${PORT}/`);
 });
+
+app.use(express.static(`public`))
