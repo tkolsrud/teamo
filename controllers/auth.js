@@ -14,3 +14,5 @@ router.get('/register', function (req, res) {
 router.get('/login', function (req, res) {
     res.render('auth/login');
 });
+
+module.exports = router;
