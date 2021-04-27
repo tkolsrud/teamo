@@ -23,10 +23,10 @@ router.get('/home', (req, res) => {
 // This is the code that lets you grab the field data
 router.post('/home', async (req, res) => {
     try {
-        const bodyData = req.body;
-        console.log(req.body);
+        const query = req.query;
+        console.log(req.query);
 
-        const allCars = await db.Car.find(bodyData);
+        const allCars = await db.Car.find(query);
         const context = { cars: allCars };
 
         return console.log(context);
