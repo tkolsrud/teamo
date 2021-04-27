@@ -17,12 +17,17 @@ router.get('/help', function (req, res) {
 
 /***** Home Route *********/
 router.get('/home', function (req, res) {
-    res.render('site/home');
+    res.render('site/home', context);
 });
 
 /***** Index Route *********/
 router.get('/index', function (req, res) {
-    res.render('site/index');
+    db.Car.find({}, function (err, foundCars) {
+        if (err) return res.send(err);
+        const context = { cars: foundCars };
+        console.log(context);
+        res.render('site/index', context);
+    })
 });
 
 /***** Collection Route *********/
