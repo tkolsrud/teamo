@@ -56,6 +56,20 @@ router.get('/site/:id', function (req, res) {
     })
 });
 
+router.put('/:id', function (req, res) {
+    const id = req.params.id;
+    db.Car.findById(id, function (err, foundCar) {
+        if (err) return res.send(err);
+
+        req.body.user = req.session.currentUser.id;
+        req.body.user.garage.push(foundCar);
+
+        res.redirect('/index');
+    });
+});
+
+router.put
+
 /***** New Car Route *********/
 router.get('/newcar', function (req, res) {
     res.render('site/newcar');
