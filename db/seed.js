@@ -55,7 +55,7 @@ const cars = [
     {
         manufacturer: "Mercedes-Benz",
         country: "Germany",
-        model "C63 AMG Coupe",
+        model: "C63 AMG Coupe",
         year: "2020"
     },
 
@@ -70,26 +70,68 @@ const cars = [
         country: "UK",
         model: "XF",
         year: "2020"
-    }
+    },
     {
         manufacturer: "Aston Martin",
         country: "UK",
         model: "Vantage",
         year: "2020"
-    }
+    },
 
     {
         manufacturer: "Bentley",
         country: "UK",
         model: "Continential GT",
         year: "2017"
-    }
+    },
 
     {
         manufacturer: "Rolls Royce",
         country: "UK",
         model: "Phantom",
         year: "2020"
+    },
+    {
+        manufacturer: "Chevrolet",
+        country: "USA",
+        model: "Corvette",
+        year: "1975"
+    },
+    {
+        manufacturer: "Acura",
+        country: "Japan",
+        model: "NSX",
+        year: "1994"
+    },
+    {
+        manufacturer: "Nissan",
+        country: "Japan",
+        model: "Skyline GTR",
+        year: "1994"
+    },
+    {
+        manufacturer: "Toyota",
+        country: "Japan",
+        model: "Supra",
+        year: "1992"
+    },
+    {
+        manufacturer: "Chevrolet",
+        country: "USA",
+        model: "Camaro",
+        year: "1968"
+    },
+    {
+        manufacturer: "Porsche",
+        country: "Germany",
+        model: "993",
+        year: "1994"
+    },
+    {
+        manufacturer: "Chevrolet",
+        country: "USA",
+        model: "Bel Air",
+        year: "1955"
     }
 ];
 

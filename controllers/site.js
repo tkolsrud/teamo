@@ -12,10 +12,6 @@ router.get('/about', function (req, res) {
 });
 /***** Help Route *********/
 
-router.get('/site', function (req, res) {
-    res.render('site/help');
-});
-
 router.get('/help', function (req, res) {
     res.render('site/help');
 });
@@ -26,6 +22,9 @@ router.get('/index', async (req, res) => {
     try {
         const query = req.query;
         console.log(query);
+        if (req.query.year) {
+            req.query.year = { $regex: req.query.year, $options: "i" }
+        }
 
         const allCars = await db.Car.find(query);
         const context = { cars: allCars };
@@ -57,21 +56,17 @@ router.get('/site/:id', function (req, res) {
     })
 });
 
-router.put('/site/:id', function (req, res) {
-    const id = req.params.id;
-    // db.Car.findById(id, function (err, foundCar) {
-    //     if (err) return res.send(err);
+router.put('/show/:id', function (req, res) {
+    const carId = req.params.id;
+    db.User.findById(req.session.currentUser.id, function (err, foundUser) {
+        if (err) return res.send(err);
 
-    //     const context = {car: foundCar}
-    // req.session.currentUser.garage.push(id);
-    console.log(id);
-    // req.body.user.garage.push(foundCar.id);
-
-    return res.redirect('/index');
+        foundUser.garage.push(carId);
+        foundUser.save();
+        return res.redirect('/index');
+    });
 });
-// });
 
-router.put
 
 /***** New Car Route *********/
 router.get('/newcar', function (req, res) {
