@@ -40,4 +40,37 @@ router.get('/login', function (req, res) {
     res.render('auth/login');
 });
 
+router.post('/login', async function (req, res) {
+    try {
+        const foundUser = await db.User.findOne({ email: req.body.email });
+
+        if (!foundUser) return res.redirect('/register'); // one line if statement that checks for a user and if none -> register
+
+        const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db)
+
+        //if not match send error:
+        if (!match) return res.send('password invalid');
+
+        // if there is a match create session(cookie) and redirect home
+        req.session.currentUser = { //creates the cookie tied to the current user
+            id: foundUser._id,
+            username: foundUser.username,
+        }
+
+        return res.redirect('/index');
+
+    } catch (err) {
+        console.log(err);
+        res.send(err);
+    }
+});
+
+
+
+/* === Logout Route === */
+router.delete('/logout', async function (req, res) {
+    await req.session.destroy();
+    return res.redirect('/');
+});
+
 module.exports = router;
