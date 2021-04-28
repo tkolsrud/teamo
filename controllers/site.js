@@ -51,22 +51,25 @@ router.get('/site/:id', function (req, res) {
             return res.send('Server Error');
         } else {
             const context = { car: foundCar };
+            console.log(foundCar);
             return res.render('site/show', context);
         }
     })
 });
 
-router.put('/:id', function (req, res) {
+router.put('/site/:id', function (req, res) {
     const id = req.params.id;
-    db.Car.findById(id, function (err, foundCar) {
-        if (err) return res.send(err);
+    // db.Car.findById(id, function (err, foundCar) {
+    //     if (err) return res.send(err);
 
-        req.body.user = req.session.currentUser.id;
-        req.body.user.garage.push(foundCar);
+    //     const context = {car: foundCar}
+    // req.session.currentUser.garage.push(id);
+    console.log(id);
+    // req.body.user.garage.push(foundCar.id);
 
-        res.redirect('/index');
-    });
+    return res.redirect('/index');
 });
+// });
 
 router.put
 

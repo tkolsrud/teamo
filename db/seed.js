@@ -92,7 +92,7 @@ const cars = [
         year: "2020"
     }
 ];
-];
+
 
 const run = async () => {
     try {

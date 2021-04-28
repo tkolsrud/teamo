@@ -58,7 +58,22 @@
             </select>
             <input type="submit" value="filter" />
         </form>
+        <form action="" method="GET">
+            <label for="car-select">filter by Decade:</label>
 
+            <select name="year" id="">
+                <option value="">choose a decade:</option>
+                <option value="195">1950s</option>
+                <option value="196">1960s</option>
+                <option value="197">1970s</option>
+                <option value="198">1980s</option>
+                <option value="199">1990s</option>
+                <option value="200">2000s</option>
+                <option value="201">2010s</option>
+                <option value="202">2020s</option>
+            </select>
+            <input type="submit" value="filter" />
+        </form>
         <ul>
             <% cars.forEach(car=> { %>
                 <li>
