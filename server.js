@@ -27,7 +27,7 @@ app.use(express.static(`${__dirname}/public`));
 
 
 // // setup session middleware
-app.use(session)({
+app.use(session({
     store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
     secret: "super secret waffles",
     resave: false,
@@ -35,7 +35,7 @@ app.use(session)({
     cookie: {
         maxAge: 1000 * 60 * 60 * 24
     }
-});
+}));
 
 // // logger middleware
 app.use(function (req, res, next) {
@@ -45,17 +45,18 @@ app.use(function (req, res, next) {
 });
 
 // // authRequired middleware
-// const authRequired = function (req, res, next) {
-//     if (req.session.currentUser) {
-//         return next();
-//     }
-//     return res.redirect('/login');
-// };
+const authRequired = function (req, res, next) {
+    if (req.session.currentUser) {
+        return next();
+    }
+    return res.redirect('/login');
+};
 
 
 /* === Routes/Controllers === */
 // Welcome
 app.get("/", function (req, res) {
+    const context = { user: req.session.currentUser }
     res.render("Welcome");
 });
 //auth controller
