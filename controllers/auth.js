@@ -55,7 +55,6 @@ router.post('/login', async function (req, res) {
         req.session.currentUser = { //creates the cookie tied to the current user
             id: foundUser._id,
             username: foundUser.username,
-            garage: foundUser.garage
         }
 
         return res.redirect('/');
