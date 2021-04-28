@@ -17,14 +17,15 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim enim massa, et pellentesque dolor
         mattis
     </p>
-
-    <p class="emailtext">E-mail:</p><input class="email" type="text" placeholder="email" name="email" value=" " />
-    <p class="usernametext">Username:</p><input class="username" type="text" name="username" value=" " />
-    <p class="passwordtext">Password:</p><input class="password" type="text" name="password" value=" " />
-    <p class="reentertext">Re-enter Password:</p><input class="reenter" type="text" name="re-enter password"
-        value=" " />
-    <!--Button-->
-    <input class="submitbutton" type="submit" value="Submit">
+    <form action="/register" method="POST">
+        <p class="emailtext">E-mail:</p><input class="email" type="email" placeholder="email" name="email" />
+        <p class="usernametext">Username:</p><input class="username" type="text" name="username" />
+        <p class="passwordtext">Password:</p><input class="password" type="password" name="password" />
+        <!-- <p class="reentertext">Re-enter Password:</p><input class="reenter" type="text" name="re-enter password"
+         /> -->
+        <!--Button-->
+        <input class="submitbutton" type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
