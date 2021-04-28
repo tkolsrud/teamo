@@ -57,7 +57,7 @@ router.post('/login', async function (req, res) {
             username: foundUser.username,
         }
 
-        return res.redirect('/');
+        return res.redirect('/index');
 
     } catch (err) {
         console.log(err);
@@ -66,5 +66,11 @@ router.post('/login', async function (req, res) {
 });
 
 
+
+/* === Logout Route === */
+router.delete('/logout', async function (req, res) {
+    await req.session.destroy();
+    return res.redirect('/');
+});
 
 module.exports = router;
