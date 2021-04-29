@@ -17,17 +17,17 @@
     <nav> Home | About | Your Collections | Help </nav>
     <h2 class="matchingvehichlesheader">Matching vehicles</h2>
     <!--Images-->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqjoEXDCbmYd0P9f7l0DL5pDgpE43T_B9gA&usqp=CAU">
-    <input type="submit" value="Details">
-    <input type="submit" value="Delete">
-    <img src=" ">
-    <!--Images-->
-    <img src=" ">
-    <!--Button-->
-    <input type="submit" value="Details">
-    <input type="submit" value="Delete">
-    <h4>Feature </h4>
-
+    <ul>
+        <% cars.forEach(car=> { %>
+            <li>
+                <a href="/site/<%=car._id%>">
+                    <%= car.manufacturer %>
+                        <%= car.model %>
+                            <%= car.country %>
+                </a>
+            </li>
+            <% })%>
+    </ul>
 </body>
 
 </html>
