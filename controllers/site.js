@@ -103,4 +103,41 @@ router.get('/garage/:id', function (req, res) {
 router.get('/newcar', function (req, res) {
     res.render('site/newcar');
 });
+
+
+
+
+/* === Remove Car From Garage Route === */
+// router.put('/garage/:id', (req, res) => {
+//     const carId = req.params.id;
+//     db.User.findById(req.session.currentUser.id, (err, foundUser) => {
+//         if (err) return res.send(err);
+
+//         const index = foundUser.garage.indexOf(carId);
+//         foundUser.garage.splice(index, 1);
+//         foundUser.save();
+
+//         return res.render('site/garage')
+//     })
+// });
+
+router.put('/garage/:id', (req, res) => {
+    const carId = req.params.id;
+    db.User.findById(req.session.currentUser.id, async (err, foundUser) => {
+        try {
+            const index = foundUser.garage.indexOf(carId);
+            foundUser.garage.splice(index, 1);
+            await foundUser.save();
+
+            return res.redirect('/garage');
+        }
+
+        catch (err) {
+            console.log(err);
+            return res.send('Server Error');
+        }
+    });
+});
+
+
 module.exports = router;
