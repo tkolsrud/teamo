@@ -13,6 +13,68 @@
 
 <body>
     <h1>CarBank</h1>
+<<<<<<< HEAD
+    <nav><a href="/index"> Home |</a><a href="/about"> About </a> <a href="/collection">| Your collection </a>
+        <a href="help"> | Help</a>
+        <form action="/logout?_method=DELETE" method="POST">
+            <div>
+                <input type="submit" value="Logout">
+            </div>
+        </form>
+        <h3>Welcome</h3>
+        <main>
+            <form action="" method="GET">
+                <label for="car-select">filter by manufacturer:</label>
+
+                <select name="manufacturer" id="">
+                    <option value="">choose a manufacturer</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Jaguar">Jaguar</option>
+                </select>
+                <input type="submit" value="filter" />
+            </form>
+            <form action="" method="GET">
+                <label for="car-select">filter by model:</label>
+
+                <select name="model" id="">
+                    <option value="">choose a model</option>
+                    <option value="Mustang">Mustang</option>
+                    <option value="EVO">EVO</option>
+                    <option value="R8">R8</option>
+                    <option value="M4">M4</option>
+                    <option value="XF">XF</option>
+                </select>
+                <input type="submit" value="filter" />
+            </form>
+            <form action="" method="GET">
+                <label for="car-select">filter by country:</label>
+
+                <select name="country" id="">
+                    <option value="">choose a model</option>
+                    <option value="USA">USA</option>
+                    <option value="Italy">Italy</option>
+                    <option value="UK">UK</option>
+                    <option value="Germany">Germany</option>
+                </select>
+                <input type="submit" value="filter" />
+            </form>
+
+            <ul>
+                <% cars.forEach(car=> { %>
+                    <li>
+                        <a href="/site/<%=car._id%>">
+                            <%= car.manufacturer %>
+                                <%= car.model %>
+                                    <%= car.country %>
+                        </a>
+                    </li>
+                    <% })%>
+            </ul>
+        </main>
+=======
     <form action="/logout?_method=DELETE" method="POST">
         <div>
             <input type="submit" value="Logout">
@@ -80,6 +142,7 @@
                 <% })%>
         </ul>
     </main>
+>>>>>>> submaster
 </body>
 </body>
 
