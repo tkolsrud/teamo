@@ -48,11 +48,47 @@ router.get('/admin/:id', function (req, res) {
             return res.send('Server Error');
         } else {
             const context = { car: foundCar };
+
             console.log(foundCar);
             return res.render('admin/adminshow', context);
         }
     })
 });
+
+
+/* === Edit Car Route === */
+router.get('/admin/:id/edit', (req, res) => {
+    db.Car.findById(req.params.id, function (err, foundCar) {
+        if (err) return res.send(err);
+
+        const context = { car: foundCar };
+
+        console.log(foundCar);
+        return res.render('admin/edit', context);
+    });
+});
+
+
+/* === Update Car Route === */
+router.put('/admin/:id', (req, res) => {
+    db.Car.findByIdAndUpdate(
+        req.params.id,
+        {
+            $set: {
+                ...req.body,
+            },
+        },
+        { new: true },
+        (err, updatedCar) => {
+            if (err) return res.send(err);
+            return res.redirect(`/admin/${updatedCar._id}`);
+        }
+
+    );
+});
+
+
+
 
 /* === Delete Car Route === */
 router.delete('/admin/:id', (req, res) => {
