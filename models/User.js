@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema(
         password: { type: String, required: [true, "Please Enter A Password"] },
         username: { type: String, required: [true, "Please Enter A Username."], unique: true },
         garage: [{ type: mongoose.Schema.Types.ObjectId, ref: "Car" }],
+        admin: { type: String }
     },
     {
         timestamps: true,

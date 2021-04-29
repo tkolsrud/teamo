@@ -14,6 +14,7 @@
     <h3 class="welcome">Welcome</h3> <input class="signout" type="submit" value="Sign out">
 
     <!--Navigation bar-->
+<<<<<<< HEAD:views/site/collection.ejs
     <nav> <a href="/index"> Home |</a><a href="/about"> About </a> <a href="/collection">| Your collection </a>
         <a href="help"> | Help</a>
         <h2 class="matchingvehichlesheader">Matching vehicles</h2>
@@ -29,6 +30,22 @@
         <input type="submit" value="Delete">
         <h4>Feature </h4>
 
+=======
+    <nav> Home | About | Your Collections | Help </nav>
+    <h2 class="matchingvehichlesheader">Matching vehicles</h2>
+    <!--Images-->
+    <ul>
+        <% cars.forEach(car=> { %>
+            <li>
+                <a href="/garage/<%=car._id%>">
+                    <%= car.manufacturer %>
+                        <%= car.model %>
+                            <%= car.country %>
+                </a>
+            </li>
+            <% })%>
+    </ul>
+>>>>>>> submaster:views/site/garage.ejs
 </body>
 
 </html>
