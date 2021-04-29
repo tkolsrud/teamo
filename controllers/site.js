@@ -79,6 +79,26 @@ router.put('/show/:id', function (req, res) {
 });
 
 
+/* === Garage Show Route === */
+
+router.get('/garage/:id', function (req, res) {
+    const id = req.params.id;
+    db.Car.findById(id, function (err, foundCar) {
+        if (err) {
+            console.log(err);
+            return res.send('Server Error');
+        } else {
+            const context = { car: foundCar };
+            console.log(foundCar);
+            return res.render('site/garageshow', context);
+        }
+    })
+});
+
+
+
+
+
 /***** New Car Route *********/
 router.get('/newcar', function (req, res) {
     res.render('site/newcar');
