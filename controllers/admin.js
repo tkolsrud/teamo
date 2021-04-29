@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models');
 
+
+/* === Admin Home Route === */
 router.get('/adminhome', async (req, res) => {
     try {
         const query = req.query;
@@ -20,10 +22,22 @@ router.get('/adminhome', async (req, res) => {
     }
 });
 
+/* === AddNew Route ==== */
 router.get('/addnew', (req, res) => {
     return res.render('admin/addnew');
 })
 
+router.post('/addnew', (req, res) => {
+    db.Car.create(req.body, function (err, createdCar) {
+        if (err) {
+            console.log(err);
+            return res.send("Server error");
+        } else {
+            console.log("created car", createdCar);
+            return res.redirect('/adminhome');
+        }
+    })
+});
 
 
 module.exports = router;
