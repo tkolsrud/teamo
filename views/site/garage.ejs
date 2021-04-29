@@ -1,51 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include ("../partials/headerpartial.ejs"); %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/styles/main.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <body>
+        <h1>CarBank</h1>
+        <h3 class="welcome">Welcome</h3> <input class="signout" type="submit" value="Sign out">
 
-<body>
-    <h1>CarBank</h1>
-    <h3 class="welcome">Welcome</h3> <input class="signout" type="submit" value="Sign out">
+        <!--Navigation bar-->
+        <<<<<<< HEAD:views/site/collection.ejs <nav> <a href="/index"> Home |</a><a href="/about"> About </a> <a
+                href="/collection">| Your collection </a>
+            <a href="help"> | Help</a>
+            <h2 class="matchingvehichlesheader">Matching vehicles</h2>
+            <!--Images-->
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqjoEXDCbmYd0P9f7l0DL5pDgpE43T_B9gA&usqp=CAU">
+            <input type="submit" value="Details">
+            <input type="submit" value="Delete">
+            <img src=" ">
+            <!--Images-->
+            <img src=" ">
+            <!--Button-->
+            <input type="submit" value="Details">
+            <input type="submit" value="Delete">
+            <h4>Feature </h4>
 
-    <!--Navigation bar-->
-<<<<<<< HEAD:views/site/collection.ejs
-    <nav> <a href="/index"> Home |</a><a href="/about"> About </a> <a href="/collection">| Your collection </a>
-        <a href="help"> | Help</a>
-        <h2 class="matchingvehichlesheader">Matching vehicles</h2>
-        <!--Images-->
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqjoEXDCbmYd0P9f7l0DL5pDgpE43T_B9gA&usqp=CAU">
-        <input type="submit" value="Details">
-        <input type="submit" value="Delete">
-        <img src=" ">
-        <!--Images-->
-        <img src=" ">
-        <!--Button-->
-        <input type="submit" value="Details">
-        <input type="submit" value="Delete">
-        <h4>Feature </h4>
+            =======
+            <nav> Home | About | Your Collections | Help </nav>
+            <h2 class="matchingvehichlesheader">Matching vehicles</h2>
+            <!--Images-->
+            <ul>
+                <% cars.forEach(car=> { %>
+                    <li>
+                        <a href="/garage/<%=car._id%>">
+                            <%= car.manufacturer %>
+                                <%= car.model %>
+                                    <%= car.country %>
+                        </a>
+                    </li>
+                    <% })%>
+            </ul>
+            >>>>>>> submaster:views/site/garage.ejs
+    </body>
 
-=======
-    <nav> Home | About | Your Collections | Help </nav>
-    <h2 class="matchingvehichlesheader">Matching vehicles</h2>
-    <!--Images-->
-    <ul>
-        <% cars.forEach(car=> { %>
-            <li>
-                <a href="/garage/<%=car._id%>">
-                    <%= car.manufacturer %>
-                        <%= car.model %>
-                            <%= car.country %>
-                </a>
-            </li>
-            <% })%>
-    </ul>
->>>>>>> submaster:views/site/garage.ejs
-</body>
-
-</html>
+    </html>

@@ -154,3 +154,8 @@ top: -60px;
         width: 300px;
         height: 200px;
     }
+
+    .navlinks_left {
+        display: flex;
+        width: 400px;
+    }

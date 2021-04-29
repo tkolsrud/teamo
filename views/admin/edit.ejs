@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include ("../partials/headerpartial.ejs"); %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <body>
+        <h1>Edit Car Page</h1>
+        <form action="/admin/<%= car._id %>?_method=PUT" method="POST">
+            <input type="text" name="manufacturer" placeholder="Make" value="<%=car.manufacturer%>" />
+            <input type="text" name="country" placeholder="country" value="<%=car.country%>" />
+            <input type="text" name="model" placeholder="model" value="<%=car.model%>" />
+            <input type="text" name="year" placeholder="year" value="<%=car.year%>" />
+            <input type="submit" value="Update Car" />
+        </form>
+        </form>
+    </body>
 
-<body>
-    <h1>Edit Car Page</h1>
-    <form action="/admin/<%= car._id %>?_method=PUT" method="POST">
-        <input type="text" name="manufacturer" placeholder="Make" value="<%=car.manufacturer%>" />
-        <input type="text" name="country" placeholder="country" value="<%=car.country%>" />
-        <input type="text" name="model" placeholder="model" value="<%=car.model%>" />
-        <input type="text" name="year" placeholder="year" value="<%=car.year%>" />
-        <input type="submit" value="Update Car" />
-    </form>
-    </form>
-</body>
-
-</html>
+    </html>
