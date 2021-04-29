@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 h1
 {
@@ -159,3 +161,5 @@ top: -60px;
         display: flex;
         width: 400px;
     }
+
+    
