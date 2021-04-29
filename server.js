@@ -63,7 +63,7 @@ app.get("/", function (req, res) {
 app.use('/', controllers.auth);
 
 // site controller
-app.use('/', controllers.site);
+app.use('/', authRequired, controllers.site);
 
 
 
