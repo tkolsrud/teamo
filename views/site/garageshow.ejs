@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include ("../partials/headerpartial.ejs"); %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
 
     <body>
         <h1>Show page</h1>
-        <main>
-            <section>
-                <h2>Car info</h2>
-                <ul>
+        <%- include ("../partials/navbarPartial.ejs"); %>
 
-                    <li>Model: <%= car.model %>
-                    </li>
-                    <li>Manufacturer: <%= car.manufacturer %>
-                    </li>
-                    <li>Country of Origin: <%= car.country %>
-                    </li>
+            <main>
+                <section>
+                    <h2>Car info</h2>
+                    <ul>
 
-                </ul>
+                        <li>Model: <%= car.model %>
+                        </li>
+                        <li>Manufacturer: <%= car.manufacturer %>
+                        </li>
+                        <li>Country of Origin: <%= car.country %>
+                        </li>
 
-            </section>
-            <form action="/garage/<%=car._id%>?_method=PUT" method="POST">
-                <input type="submit" value="Remove From Garage">
-            </form>
-        </main>
+                    </ul>
+
+                </section>
+                <form action="/garage/<%=car._id%>?_method=PUT" method="POST">
+                    <input type="submit" value="Remove From Garage">
+                </form>
+            </main>
     </body>
-</body>
 
-</html>
+
+    </html>

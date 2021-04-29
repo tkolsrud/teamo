@@ -1,41 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+<%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
+
         <h1>Admin Show page</h1>
-        <main>
-            <section>
-                <h2>Car info</h2>
-                <ul>
+        <%- include ("../partials/navbarPartial.ejs"); %>
 
-                    <li>Model: <%= car.model %>
-                    </li>
-                    <li>Manufacturer: <%= car.manufacturer %>
-                    </li>
-                    <li>Country of Origin: <%= car.country %>
-                    </li>
-                    <li>Year: <%=car.year%>
-                    </li>
+            <main>
+                <section>
+                    <h2>Car info</h2>
+                    <ul>
 
-                </ul>
-            </section>
-            <section>
-                <a href="/admin/<%=car._id%>/edit">Edit Car</a>
-                <form action="/admin/<%=car._id%>?_method=DELETE" method="POST">
-                    <input type="submit" value="Remove From Database" />
-                </form>
-            </section>
-        </main>
+                        <li>Model: <%= car.model %>
+                        </li>
+                        <li>Manufacturer: <%= car.manufacturer %>
+                        </li>
+                        <li>Country of Origin: <%= car.country %>
+                        </li>
+                        <li>Year: <%=car.year%>
+                        </li>
+
+                    </ul>
+                </section>
+                <section>
+                    <a href="/admin/<%=car._id%>/edit">Edit Car</a>
+                    <form action="/admin/<%=car._id%>?_method=DELETE" method="POST">
+                        <input type="submit" value="Remove From Database" />
+                    </form>
+                </section>
+            </main>
     </body>
-</body>
 
-</html>
+
+    </html>

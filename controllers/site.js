@@ -88,17 +88,6 @@ router.get('/garage/:id', function (req, res) {
 });
 
 
-
-
-
-/***** New Car Route *********/
-router.get('/newcar', function (req, res) {
-    res.render('site/newcar');
-});
-
-
-
-
 /* === Remove Car From Garage Route === */
 router.put('/garage/:id', (req, res) => {
     const carId = req.params.id;
