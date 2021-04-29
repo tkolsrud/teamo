@@ -36,10 +36,20 @@ router.get('/index', async (req, res) => {
     }
 });
 
-/***** Collection Route *********/
-router.get('/collection', function (req, res) {
-    res.render('site/collection');
+/***** Garage Route *********/
+router.get('/garage', function (req, res) {
+    db.User.findById(req.session.currentUser.id)
+        .populate('garage')
+        .exec(function (err, foundUser) {
+            if (err) return res.send(err);
+
+            const context = { cars: foundUser.garage };
+            console.log(context);
+            return res.render("site/garage", context);
+        })
 });
+
+
 
 /***** Show Route *********/
 router.get('/site/:id', function (req, res) {
@@ -56,6 +66,7 @@ router.get('/site/:id', function (req, res) {
     })
 });
 
+/* === Add to Garage Route === */
 router.put('/show/:id', function (req, res) {
     const carId = req.params.id;
     db.User.findById(req.session.currentUser.id, function (err, foundUser) {
