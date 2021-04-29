@@ -68,13 +68,13 @@ router.post('/login', async function (req, res) {
 });
 
 /***** About Route *********/
-router.get('/about', function (req, res) {
-    res.render('site/about');
+router.get('/aboutauth', function (req, res) {
+    res.render('auth/aboutauth');
 });
 /***** Help Route *********/
 
-router.get('/help', function (req, res) {
-    res.render('site/help');
+router.get('/helpauth', function (req, res) {
+    res.render('auth/helpauth');
 });
 
 /* === Logout Route === */

@@ -7,6 +7,16 @@ const db = require('../models')
 // Home route - Presentational
 
 
+/* === About Route === */
+router.get('/about', function (req, res) {
+    res.render('site/about');
+});
+
+/* === Help Route === */
+router.get('/help', function (req, res) {
+    res.render('site/help');
+});
+
 
 /***** Index Route *********/
 
