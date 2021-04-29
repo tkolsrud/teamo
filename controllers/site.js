@@ -6,15 +6,7 @@ const db = require('../models')
 // Help route - Presentational 
 // Home route - Presentational
 
-/***** About Route *********/
-router.get('/about', function (req, res) {
-    res.render('site/about');
-});
-/***** Help Route *********/
 
-router.get('/help', function (req, res) {
-    res.render('site/help');
-});
 
 /***** Index Route *********/
 
@@ -108,19 +100,6 @@ router.get('/newcar', function (req, res) {
 
 
 /* === Remove Car From Garage Route === */
-// router.put('/garage/:id', (req, res) => {
-//     const carId = req.params.id;
-//     db.User.findById(req.session.currentUser.id, (err, foundUser) => {
-//         if (err) return res.send(err);
-
-//         const index = foundUser.garage.indexOf(carId);
-//         foundUser.garage.splice(index, 1);
-//         foundUser.save();
-
-//         return res.render('site/garage')
-//     })
-// });
-
 router.put('/garage/:id', (req, res) => {
     const carId = req.params.id;
     db.User.findById(req.session.currentUser.id, async (err, foundUser) => {

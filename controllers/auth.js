@@ -56,7 +56,9 @@ router.post('/login', async function (req, res) {
             id: foundUser._id,
             username: foundUser.username,
         }
-
+        if (foundUser.admin) {
+            return res.redirect('/adminhome');
+        }
         return res.redirect('/index');
 
     } catch (err) {
