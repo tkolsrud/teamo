@@ -54,7 +54,38 @@
                         <option value="202">2020s</option>
                     </select>
                 </form>
-                <ul>
+
+                <section class="inventory">
+                    <% if(!cars.length) {%>
+                        <p>Select By Make, Country, or Year!</p>
+                        <% } %>
+                            <% cars.forEach(car=> { %>
+                                <a class="card" href="/site/<%=car._id%>">
+                                    <div class="card_manfufacturer">
+                                        Make: <%= car.manufacturer%>
+                                    </div>
+                                    <div class="card_model">
+                                        Model: <%= car.model%>
+                                    </div>
+                                    <div class="card_year">
+                                        Year: <%= car.year%>
+                                    </div>
+                                    <div class="card_country">
+                                        Country of Origin<%= car.country%>
+                                    </div>
+                                    <% }) %>
+
+                                </a>
+
+
+                </section>
+
+
+
+
+
+
+                <!-- <ul>
                     <% cars.forEach(car=> { %>
                         <li>
                             <a href="/admin/<%=car._id%>">
@@ -64,7 +95,7 @@
                             </a>
                         </li>
                         <% })%>
-                </ul>
+                </ul> -->
             </main>
     </body>
 
