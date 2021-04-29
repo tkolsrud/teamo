@@ -39,5 +39,29 @@ router.post('/addnew', (req, res) => {
     })
 });
 
+/* === Admin Show Route === */
+router.get('/admin/:id', function (req, res) {
+    const id = req.params.id;
+    db.Car.findById(id, function (err, foundCar) {
+        if (err) {
+            console.log(err);
+            return res.send('Server Error');
+        } else {
+            const context = { car: foundCar };
+            console.log(foundCar);
+            return res.render('admin/adminshow', context);
+        }
+    })
+});
+
+/* === Delete Car Route === */
+router.delete('/admin/:id', (req, res) => {
+    db.Car.findByIdAndDelete(req.params.id, function (err, deletedCar) {
+        if (err) return res.send(err);
+
+        return res.redirect('/adminhome');
+    });
+});
+
 
 module.exports = router;
