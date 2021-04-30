@@ -29,13 +29,6 @@ nav{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-
-
-main{
-   
-    height: 75%;
-    
-}
 ul {
     display: inline-flex;
 
@@ -44,6 +37,18 @@ ul {
 li{
     list-style-type: none;
 }
+
+h3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.div-addnew{
+    display:flex;
+    justify-content: center;
+}
+
 .input-logout{
     border: none;
 }
@@ -204,40 +209,64 @@ top: -60px;
     width: 400px;
  }
 
+.section-select-car{
+    margin:auto;
+    display: block;
+    width: 435px;
+    padding: 15px;    
+}
+
+.form-select-car{
+    padding: 5px;
+}
+
+.select-car{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
 .gallery {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     align-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
+    padding: 30px;
+    justify-content: center;
+    width: 100vw;
+    
         
 }
 
 .card {
-        
-    width: 30%;
+
+    display: flex;
+    flex-direction: column;    
+    flex: 1 0 30%;
     max-width: 400px;
+    min-width: 370px;
     max-height: 600px;
     height: auto;
-    display: grid;
-    place-items: center; 
+    padding: 15px;
         
         
 }
 
-.image-car {
-    object-fit:cover;
-    max-width: 470px;
-    max-height: 350px;
-}
 
 .image-car{
+    object-fit:cover;
+    display: flex;
+    max-height: 250px;
     height: 55%;
+    max-width: 370px;
+    min-width: 370px;
+    padding-top: 10px;
 }
 
 .info-car{
     height: 5%;
+    
 }
 
 
