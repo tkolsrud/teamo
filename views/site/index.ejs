@@ -54,19 +54,31 @@
                         <option value="202">2020s</option>
                     </select>
                 </form>
-                <ul>
-                    <% cars.forEach(car=> { %>
-                        <li class="card">
-                            <a href="/site/<%=car._id%>">
-                                <%= car.manufacturer %>
-                                    <%= car.model %>
-                                        <%= car.country %>
-                                            <img class="image-car" src="<%= car.img %>" alt="">
+                <section class="gallery">
+                    <% if(!cars.length) {%>
+                        <p>Select By Make, Country, or Year!</p>
+                        <% } %>
+                            <% cars.forEach(car=> { %>
 
-                            </a>
-                        </li>
-                        <% })%>
-                </ul>
+                                <a class="card" href="/site/<%=car._id%>">
+                                    <div class="card_manfufacturer">
+                                        Make: <%= car.manufacturer%>
+                                    </div>
+                                    <div class="card_model">
+                                        Model: <%= car.model%>
+                                    </div>
+                                    <div class="card_year">
+                                        Year: <%= car.year%>
+                                    </div>
+                                    <div class="card_country">
+                                        Country of Origin: <%= car.country%>
+                                    </div>
+                                    <div>
+                                        <img class="image-car" src="<%= car.img %>" alt="">
+                                    </div>
+                                </a>
+                                <% }) %>
+                </section>
             </main>
     </body>
     </body>
