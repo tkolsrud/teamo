@@ -37,6 +37,18 @@ ul {
 li{
     list-style-type: none;
 }
+
+h3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.div-addnew{
+    display:flex;
+    justify-content: center;
+}
+
 .input-logout{
     border: none;
 }
@@ -197,15 +209,20 @@ top: -60px;
     width: 400px;
  }
 
-.form-select-car{
+.section-select-car{
     margin:auto;
     display: block;
-    width: 400px;
-   
-    
+    width: 435px;
+    padding: 15px;    
 }
 
+.form-select-car{
+    padding: 5px;
+}
 
+.select-car{
+    padding: 3px;
+}
 .gallery {
     display: flex;
     flex-direction: row;
@@ -234,20 +251,20 @@ top: -60px;
         
 }
 
-.image-car {
-    object-fit:cover;
-    max-width: 370px;
-    min-width: 370px;
-    max-height: 250px;
-}
 
 .image-car{
+    object-fit:cover;
     display: flex;
+    max-height: 250px;
     height: 55%;
+    max-width: 370px;
+    min-width: 370px;
+    padding-top: 10px;
 }
 
 .info-car{
     height: 5%;
+    
 }
 
 
