@@ -64,16 +64,17 @@
 
                                 <a class="card" href="/site/<%=car._id%>">
                                     <div class="card_manfufacturer">
-                                        Make: <%= car.manufacturer%>
+                                        <u>Make:</u>
+                                        <%= car.manufacturer%>
                                     </div>
                                     <div class="card_model">
-                                        Model: <%= car.model%>
+                                        <u>Model</u>: <%= car.model%>
                                     </div>
                                     <div class="card_year">
-                                        Year: <%= car.year%>
+                                        <u>Year</u>: <%= car.year%>
                                     </div>
                                     <div class="card_country">
-                                        Country of Origin: <%= car.country%>
+                                        <u>Country of Origin</u>: <%= car.country%>
                                     </div>
                                     <div>
                                         <img class="image-car" src="<%= car.img %>" alt="">
