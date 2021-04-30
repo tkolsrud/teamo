@@ -7,9 +7,7 @@
 
 
             <form action="/logout?_method=DELETE" method="POST">
-                <div>
-                    <input type="submit" value="Logout">
-                </div>
+
             </form>
             <h3>Welcome</h3>
             <main>
@@ -37,12 +35,18 @@
 
                     <select name="country" id="">
                         <option value="">choose by country</option>
-                        <option value="USA">USA</option>
+                        <option value="USA">USA<i class="flag flag-united-states"></i></option>
                         <option value="Italy">Italy</option>
                         <option value="UK">UK</option>
                         <option value="Germany">Germany</option>
                         <option value="Japan">Japan</option>
                     </select>
+                    <input type="submit" value="filter" />
+                </form>
+                <form action="" method="GET">
+                    <label for="car-select">filter by country:</label>
+                    <select class="selectpicker countrypicker"
+                        data-countries="AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE"></select>
                     <input type="submit" value="filter" />
                 </form>
                 <form action="" method="GET">
@@ -73,7 +77,7 @@
                         <% })%>
                 </ul>
             </main>
-            >>>>>>> submaster
+
     </body>
     </body>
 
