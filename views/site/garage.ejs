@@ -7,34 +7,33 @@
         <!--Navigation bar-->
         <%- include ("../partials/navbarPartial.ejs"); %>
 
-            <h2 class="matchingvehichlesheader">Matching vehicles</h2>
-            <!--Images-->
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqjoEXDCbmYd0P9f7l0DL5pDgpE43T_B9gA&usqp=CAU">
-            <input type="submit" value="Details">
-            <input type="submit" value="Delete">
-            <img src=" ">
-            <!--Images-->
-            <img src=" ">
-            <!--Button-->
-            <input type="submit" value="Details">
-            <input type="submit" value="Delete">
-            <h4>Feature </h4>
 
 
-            <h2 class="matchingvehichlesheader">Matching vehicles</h2>
-            <!--Images-->
-            <ul>
-                <% cars.forEach(car=> { %>
-                    <li>
-                        <a href="/garage/<%=car._id%>">
-                            <%= car.manufacturer %>
-                                <%= car.model %>
-                                    <%= car.country %>
-                        </a>
-                    </li>
-                    <% })%>
-            </ul>
+            <section class="gallery">
+                <% if(!cars.length) {%>
+                    <p>Select By Make, Country, or Year!</p>
+                    <% } %>
+                        <% cars.forEach(car=> { %>
+
+                            <a class="card" href="/garage/<%=car._id%>">
+                                <div class="card_manfufacturer">
+                                    Make: <%= car.manufacturer%>
+                                </div>
+                                <div class="card_model">
+                                    Model: <%= car.model%>
+                                </div>
+                                <div class="card_year">
+                                    Year: <%= car.year%>
+                                </div>
+                                <div class="card_country">
+                                    Country of Origin: <%= car.country%>
+                                </div>
+                                <div>
+                                    <img class="image-car" src="<%= car.img %>" alt="">
+                                </div>
+                            </a>
+                            <% }) %>
+            </section>
     </body>
 
     </html>
