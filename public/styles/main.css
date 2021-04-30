@@ -1,5 +1,4 @@
 
-
 h1
 {
 text-align: left;
@@ -138,6 +137,7 @@ top: -60px;
         width: 300px;
         height: 200px;
     }
+
 .ford-mustang-back
     {
         position: relative;
@@ -155,7 +155,21 @@ top: -60px;
         height: 200px;
     }
 
-    .navlinks_left {
-        display: flex;
-        width: 400px;
+.navlinks_left {
+    display: flex;
+    width: 400px;
     }
+.navbar-text
+    {
+    position: relative;
+    right: -500px;
+    }
+ @font-face {
+ font-family: 'Damion', cursive;
+    src: url(https://fonts.googleapis.com/css2?family=Damion&display=swap);
+}
+    
+.navbar-brand
+{
+    font-family: 'Damion', cursive;
+}

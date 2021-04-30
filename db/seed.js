@@ -12,7 +12,7 @@ const cars = [
         manufacturer: "Ford",
         country: "USA",
         model: "GT",
-        year: "2020"
+        year: "2017"
     },
     {
         manufacturer: "Dodge",
@@ -31,13 +31,13 @@ const cars = [
         manufacturer: "Lamborghini",
         country: "Italy",
         model: "Huracan EVO",
-        year: "2020"
+        year: "2021"
     },
     {
         manufacturer: "Audi",
         country: "Germany",
         model: "R8",
-        year: "2015"
+        year: "2019"
     },
     {
         manufacturer: "BMW",
