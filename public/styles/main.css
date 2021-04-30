@@ -10,7 +10,7 @@ body
     /* display: block; */
     /* text-align: center; */
     height: 100vh;
-    background-color: lightskyblue;
+    background-color: #ebeced;
 }
 h1
 {
@@ -26,11 +26,8 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 /* h3{
     font-family: "Damion", cursive;
 } */
-nav{
-    position: relative;
-    top: -50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+
+
 
 ul {
     display: inline-flex;
@@ -45,6 +42,17 @@ h3{
     display: flex;
     justify-content: center;
     
+}
+.navbar {
+    background-color: rgb(28, 26, 26);
+    height: 100px;
+    border-bottom: 4px solid rgb(83, 82, 82);
+    
+}
+.banner {
+    height: 200px;
+    width: 100vw;
+    object-fit: cover;
 }
 
 .div-addnew{
@@ -186,16 +194,20 @@ top: -60px;
         width: 300px;
         height: 200px;
     }
-
+.nav-link{
+    color: whitesmoke;
+}
 
 .navlinks_left {
     display: flex;
     width: 400px;
+    color: whitesmoke;
     }
 .navbar-text
     {
     position: relative;
     right: -670px;
+    color: whitesmoke;
     }
  /* @font-face {
  font-family: 'Damion', cursive;
@@ -216,6 +228,8 @@ top: -60px;
 .navbar-brand
 {
     font-family: 'Damion', cursive;
+    color: whitesmoke;
+    font-size: 50px;
 }
 
 .navlinks_left {
@@ -230,6 +244,7 @@ form{
     display: block;
     width: 435px;
     padding: 15px;    
+    
 }
 
 .form-select-car{
@@ -270,34 +285,62 @@ form{
     text-decoration: none;
     color: rgb(44, 41, 41);
     transition: all .1s ease-in-out; 
-    border: 2px solid grey; 
+    border: 2px solid rgb(178, 178, 178); 
     font-weight: bold;      
     background-color: whitesmoke; 
 }
-.card:hover{ 
+.card:hover { 
+    color: rgb(44, 41, 41);
     transform: scale(1.01); 
 }
 
-a.card:link
-{
-   color: rgb(44, 41, 41);
+.nav-link:hover{
+    color: whitesmoke;
+    transform: scale(1.01);
+}
+
+.card:link {
+    color: rgb(44, 41, 41);
    text-decoration: none;
 }
-a.card:visited
-{
-   color: rgb(44, 41, 41);
+
+.nav-link:link {
+    color: whitesmoke;
    text-decoration: none;
 }
-a.card:hover
+
+.card:visited 
 {
-   color: rgb(44, 41, 41);
+    color: rgb(44, 41, 41);
    text-decoration: none;
 }
-a.card:active
-{
-   color: rgb(44, 41, 41);
+
+.nav-link:visited{
+     color: whitesmoke;
    text-decoration: none;
 }
+
+.card:hover 
+{
+    color: rgb(44, 41, 41);
+   text-decoration: none;
+}
+
+.nav-link:hover{
+    color: whitesmoke;
+   text-decoration: none;
+}
+.card:active
+{
+    color: rgb(44, 41, 41);
+   text-decoration: none;
+}
+
+ .nav-link:active{
+      color: whitesmoke;
+   text-decoration: none;
+ }
+
 .image-car{
     object-fit:cover;
     display: flex;

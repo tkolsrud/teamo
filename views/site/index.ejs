@@ -2,18 +2,23 @@
 
     <body>
 
-        <h1>CarBank</h1>
-        <%- include ("../partials/navbarPartial.ejs"); %>
-            <h3>Welcome</h3>
 
+
+
+        <%- include ("../partials/navbarPartial.ejs"); %>
+            <div>
+                <img class="banner"
+                    src="http://lovesphotoalbum.com/wp-content/uploads/2012/07/Dashboard-Of-Antique-1947-Ford-Convertible.jpg"
+                    alt="">
             </div>
+
             <main>
                 <Section class="section-select-car">
                     <form class="form-select-car" action="" method="GET">
                         <label for="car-select">Filter By Manufacturer:</label>
 
                         <select class="select-car" name="manufacturer" id="" onchange="this.form.submit()">
-                            <option value="">choose A Manufacturer</option>
+                            <option value="">Choose A Manufacturer</option>
                             <option value="Ford">Ford</option>
                             <option value="Buick">Buick</option>
                             <option value="Chevrolet">Chevrolet</option>
@@ -32,7 +37,7 @@
                         <label for="car-select">Filter By Country:</label>
 
                         <select class="select-car" name="country" id="" onchange="this.form.submit()">
-                            <option value="">choose by country</option>
+                            <option value="">Choose By Country</option>
                             <option value="USA">USA</option>
                             <option value="Italy">Italy</option>
                             <option value="UK">UK</option>
@@ -64,17 +69,17 @@
 
                                 <a class="card" href="/site/<%=car._id%>">
                                     <div class="card_manfufacturer">
-                                        <u>Make:</u>
+                                        Make:
                                         <%= car.manufacturer%>
                                     </div>
                                     <div class="card_model">
-                                        <u>Model</u>: <%= car.model%>
+                                        Model: <%= car.model%>
                                     </div>
                                     <div class="card_year">
-                                        <u>Year</u>: <%= car.year%>
+                                        Year: <%= car.year%>
                                     </div>
                                     <div class="card_country">
-                                        <u>Country of Origin</u>: <%= car.country%>
+                                        Country of Origin: <%= car.country%>
                                     </div>
                                     <div>
                                         <img class="image-car" src="<%= car.img %>" alt="">
