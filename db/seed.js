@@ -15,6 +15,7 @@ const cars = [
         model: "GT",
         year: "2020",
         img: "https://www.motortrend.com/uploads/sites/5/2016/12/2017-Ford-GT-front-three-quarters-in-motion-e1481056835424.jpg?fit=around%7C875:492"
+
     },
     {
         manufacturer: "Dodge",
@@ -37,6 +38,7 @@ const cars = [
         model: "Huracan EVO",
         year: "2020",
         img: "https://s1.cdn.autoevolution.com/images/news/lamborghini-production-stops-over-coronavirus-woes-141817_1.jpg"
+
     },
     {
         manufacturer: "Audi",
