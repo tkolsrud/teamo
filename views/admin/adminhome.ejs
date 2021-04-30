@@ -35,7 +35,7 @@
                         <option value="USA">USA</option>
                         <option value="Italy">Italy</option>
                         <option value="UK">UK</option>
-                        <option value="Germany">Germany</option>
+                        <option value="Germany">Germany</i></option>
                         <option value="Japan">Japan</option>
                     </select>
                 </form>
@@ -55,11 +55,12 @@
                     </select>
                 </form>
 
-                <section class="inventory">
+                <section class="gallery">
                     <% if(!cars.length) {%>
                         <p>Select By Make, Country, or Year!</p>
                         <% } %>
                             <% cars.forEach(car=> { %>
+
                                 <a class="card" href="/site/<%=car._id%>">
                                     <div class="card_manfufacturer">
                                         Make: <%= car.manufacturer%>
@@ -71,31 +72,18 @@
                                         Year: <%= car.year%>
                                     </div>
                                     <div class="card_country">
-                                        Country of Origin<%= car.country%>
+                                        Country of Origin: <%= car.country%>
                                     </div>
-                                    <% }) %>
-
+                                    <div>
+                                        <img class="image-car" src="<%= car.img %>" alt="">
+                                    </div>
                                 </a>
-
-
+                                <% }) %>
                 </section>
 
 
 
 
-
-
-                <!-- <ul>
-                    <% cars.forEach(car=> { %>
-                        <li>
-                            <a href="/admin/<%=car._id%>">
-                                <%= car.manufacturer %>
-                                    <%= car.model %>
-                                        <%= car.country %>
-                            </a>
-                        </li>
-                        <% })%>
-                </ul> -->
             </main>
     </body>
 
