@@ -55,27 +55,13 @@
                     </select>
                 </form>
 
-                <!-- <section class="gallery">
-                    <a class="card" href="">
-                        <div class="info-car">Make: Ford<br>
-                            Model: Mustang GT<br>
-                            Year: 2018<br>
-                            Country: USA</div>
-                        <img class="image-car"
-                            src="http://st.hotrod.com/uploads/sites/21/2017/11/2018-ford-mustang-gt-31.jpg" alt="">
-                    </a>
-
-
-                </section>
- -->
-
-                <section class="inventory">
+                <section class="gallery">
                     <% if(!cars.length) {%>
                         <p>Select By Make, Country, or Year!</p>
                         <% } %>
                             <% cars.forEach(car=> { %>
 
-                                <a class="card" href="/admin/<%=car._id%>">
+                                <a class="card" href="/site/<%=car._id%>">
                                     <div class="card_manfufacturer">
                                         Make: <%= car.manufacturer%>
                                     </div>
