@@ -11,6 +11,7 @@ body
     /* text-align: center; */
     height: 100vh;
     background-color: #ebeced;
+    font-family:'Asap Condensed', sans-serif;
 }
 h1
 {
@@ -53,6 +54,7 @@ h3{
     height: 200px;
     width: 100vw;
     object-fit: cover;
+    background-position:top;
 }
 
 .div-addnew{
@@ -236,9 +238,7 @@ top: -60px;
     display: flex;
     width: 400px;
  }
-form{
-    font-weight: bold;
-}
+
 .section-select-car{
     margin:auto;
     display: block;
@@ -286,7 +286,6 @@ form{
     color: rgb(44, 41, 41);
     transition: all .1s ease-in-out; 
     border: 2px solid rgb(178, 178, 178); 
-    font-weight: bold;      
     background-color: whitesmoke; 
 }
 .card:hover { 
@@ -378,7 +377,6 @@ form{
     flex-direction: column;
     align-content: flex-end;
     margin-top: 400px;
-    font-weight: bold;
 }
 
 .car-show-info > li{
@@ -393,3 +391,40 @@ form{
     margin-bottom: -21px;
     
 }
+
+
+/* .img-fade img {
+    position:absolute;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+.lambo-EVO-back {
+    -webkit-animation-delay: -4s;
+   
+}
+.ford-mustang-back {
+    -webkit-animation-delay: -2s;
+    
+} */
