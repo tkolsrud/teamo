@@ -25,7 +25,7 @@
                 <form action="" method="GET">
                     <label for="car-select">filter by manufacturer:</label>
 
-                    <body>
+                    <<<<<<< HEAD <body>
 
                         <h1>CarBank</h1>
                         <%- include ("../partials/navbarPartial.ejs"); %>
@@ -78,97 +78,97 @@
                                 </ul>
                             </main>
                             <<<<<<< HEAD </body>
-                    </body>
-                    =======
-                    =======
-                    <form action="/logout?_method=DELETE" method="POST">
-                        <div>
-                            <input type="submit" value="Logout">
-                        </div>
-                    </form>
-                    <h3>Welcome</h3>
-                    <main>
-                        <form action="" method="GET">
-                            <label for="car-select">filter by manufacturer:</label>
+    </body>
+    =======
+    =======
+    <form action="/logout?_method=DELETE" method="POST">
+        <div>
+            <input type="submit" value="Logout">
+        </div>
+    </form>
+    <h3>Welcome</h3>
+    <main>
+        <form action="" method="GET">
+            <label for="car-select">filter by manufacturer:</label>
 
-                            <select name="manufacturer" id="">
-                                <option value="">choose a manufacturer</option>
-                                <option value="Ford">Ford</option>
-                                <option value="Chevrolet">Chevrolet</option>
-                                <option value="Dodge">Dodge</option>
-                                <option value="Lamborghini">Lamborghini</option>
-                                <option value="Audi">Audi</option>
-                                <option value="BMW">BMW</option>
-                                <option value="Porsche">Porsche</option>
-                                <option value="Jaguar">Jaguar</option>
-                                <option value="Honda">Honda</option>
-                                <option value="Nissan">Nissan</option>
-                                <option value="Toyota">Toyota</option>
-                            </select>
-                            <input type="submit" value="filter" />
-                        </form>
-                        <form action="" method="GET">
-                            <label for="car-select">filter by country:</label>
-                            =======
-                            <select name="manufacturer" id="">
-                                <option value="">choose a manufacturer</option>
-                                <option value="Ford">Ford</option>
-                                <option value="Chevrolet">Chevrolet</option>
-                                <option value="Dodge">Dodge</option>
-                                <option value="Lamborghini">Lamborghini</option>
-                                <option value="Audi">Audi</option>
-                                <option value="BMW">BMW</option>
-                                <option value="Porsche">Porsche</option>
-                                <option value="Jaguar">Jaguar</option>
-                                <option value="Honda">Honda</option>
-                                <option value="Nissan">Nissan</option>
-                                <option value="Toyota">Toyota</option>
-                            </select>
-                            <input type="submit" value="filter" />
-                        </form>
-                        <form action="" method="GET">
-                            <label for="car-select">filter by country:</label>
-                            >>>>>>> submaster
+            <select name="manufacturer" id="">
+                <option value="">choose a manufacturer</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Honda">Honda</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+            <input type="submit" value="filter" />
+        </form>
+        <form action="" method="GET">
+            <label for="car-select">filter by country:</label>
+            =======
+            <select name="manufacturer" id="">
+                <option value="">choose a manufacturer</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Honda">Honda</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+            <input type="submit" value="filter" />
+        </form>
+        <form action="" method="GET">
+            <label for="car-select">filter by country:</label>
+            >>>>>>> submaster
 
-                            <select name="country" id="">
-                                <option value="">choose by country</option>
-                                <option value="USA">USA</option>
-                                <option value="Italy">Italy</option>
-                                <option value="UK">UK</option>
-                                <option value="Germany">Germany</option>
-                                <option value="Japan">Japan</option>
-                            </select>
-                            <input type="submit" value="filter" />
-                        </form>
-                        <form action="" method="GET">
-                            <label for="car-select">filter by Decade:</label>
+            <select name="country" id="">
+                <option value="">choose by country</option>
+                <option value="USA">USA</option>
+                <option value="Italy">Italy</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+            </select>
+            <input type="submit" value="filter" />
+        </form>
+        <form action="" method="GET">
+            <label for="car-select">filter by Decade:</label>
 
-                            <<<<<<< HEAD <select name="year" id="">
-                                <option value="">choose a decade:</option>
-                                <option value="195">1950s</option>
-                                <option value="196">1960s</option>
-                                <option value="197">1970s</option>
-                                <option value="198">1980s</option>
-                                <option value="199">1990s</option>
-                                <option value="200">2000s</option>
-                                <option value="201">2010s</option>
-                                <option value="202">2020s</option>
-                                </select>
-                                <input type="submit" value="filter" />
-                        </form>
-                        <ul>
-                            <% cars.forEach(car=> { %>
-                                <li>
-                                    <a href="/site/<%=car._id%>">
-                                        <%= car.manufacturer %>
-                                            <%= car.model %>
-                                                <%= car.country %>
-                                    </a>
-                                </li>
-                                <% })%>
-                        </ul>
-                    </main>
-                    >>>>>>> submaster
+            <<<<<<< HEAD <select name="year" id="">
+                <option value="">choose a decade:</option>
+                <option value="195">1950s</option>
+                <option value="196">1960s</option>
+                <option value="197">1970s</option>
+                <option value="198">1980s</option>
+                <option value="199">1990s</option>
+                <option value="200">2000s</option>
+                <option value="201">2010s</option>
+                <option value="202">2020s</option>
+                </select>
+                <input type="submit" value="filter" />
+        </form>
+        <ul>
+            <% cars.forEach(car=> { %>
+                <li>
+                    <a href="/site/<%=car._id%>">
+                        <%= car.manufacturer %>
+                            <%= car.model %>
+                                <%= car.country %>
+                    </a>
+                </li>
+                <% })%>
+        </ul>
+    </main>
+    >>>>>>> submaster
     </body>
     </body>
     >>>>>>> 1a59094bd60f5524d67febae6461c8c1e74b376b
@@ -197,6 +197,76 @@
             </li>
             <% })%>
     </ul>
+    </main>
+    >>>>>>> submaster
+    =======
+    <select class="select" name="manufacturer" onchange="this.form.submit()" id="">
+        <option value="">choose a manufacturer</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Dodge">Dodge</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Honda">Honda</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Toyota">Toyota</option>
+    </select>
+    </form>
+    <form action="" method="GET" id="dropdown-country">
+        <label for="car-select">filter by country:</label>
+
+        <select class="select" name="country" onchange="this.form.submit()" id="">
+            <option value="">choose by country</option>
+            <option value="USA">USA</option>
+            <option value="Italy">Italy</option>
+            <option value="UK">UK</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+        </select>
+    </form>
+    <form action="" method="GET" id="dropdown-year">
+        <label for="car-select">filter by Decade:</label>
+
+        <select class="select" name="year" onchange="this.form.submit()" id="">
+            <option value="">choose a decade:</option>
+            <option value="195">1950s</option>
+            <option value="196">1960s</option>
+            <option value="197">1970s</option>
+            <option value="198">1980s</option>
+            <option value="199">1990s</option>
+            <option value="200">2000s</option>
+            <option value="201">2010s</option>
+            <option value="202">2020s</option>
+        </select>
+    </form>
+    <section class="gallery">
+        <% if(!cars.length) {%>
+            <p>Select By Make, Country, or Year!</p>
+            <% } %>
+                <% cars.forEach(car=> { %>
+
+                    <a class="card" href="/site/<%=car._id%>">
+                        <div class="card_manfufacturer">
+                            Make: <%= car.manufacturer%>
+                        </div>
+                        <div class="card_model">
+                            Model: <%= car.model%>
+                        </div>
+                        <div class="card_year">
+                            Year: <%= car.year%>
+                        </div>
+                        <div class="card_country">
+                            Country of Origin: <%= car.country%>
+                        </div>
+                        <div>
+                            <img class="image-car" src="<%= car.img %>" alt="">
+                        </div>
+                    </a>
+                    <% }) %>
+    </section>
     </main>
     >>>>>>> submaster
     </body>

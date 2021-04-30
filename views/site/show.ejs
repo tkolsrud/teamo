@@ -1,4 +1,4 @@
-<%- include ("partials/headerpartial.ejs"); %>
+<%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
 
@@ -6,23 +6,29 @@
 
             <h1>Show page</h1>
             <main>
-                <section>
-                    <h2>Car info</h2>
-                    <ul>
+                <main>
+                    <section class="car-show-card">
+                        <img class="car-show-img" src="<%=car.img %>" alt="">
+                        <div>
+                            <ul class="car-show-info">
 
-                        <li>Model: <%= car.model %>
-                        </li>
-                        <li>Manufacturer: <%= car.manufacturer %>
-                        </li>
-                        <li>Country of Origin: <%= car.country %>
-                        </li>
+                                <li>Model: <%= car.model %>
+                                </li>
+                                <li>Manufacturer: <%= car.manufacturer %>
+                                </li>
+                                <li>Country of Origin: <%= car.country %>
+                                </li>
+                                <li>Year: <%=car.year%>
+                                </li>
 
-                    </ul>
+                            </ul>
+                        </div>
+                    </section>
                     <form action="/show/<%=car._id%>?_method=PUT" method="POST">
                         <input type="submit" value="Add to Garage">
                     </form>
-                </section>
-            </main>
+                    </section>
+                </main>
     </body>
 
     </html>
