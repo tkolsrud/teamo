@@ -326,12 +326,21 @@ a.card:active
     max-height: 584px;
     width: auto;
     height: auto;
+    border-radius: 5px;
+    
 }
 
 .car-show-info {
     display: flex;
     flex-direction: column;
+    align-content: flex-end;
+    margin-top: 400px;
+    font-weight: bold;
+}
 
+.car-show-info > li{
+    padding: 5px;
+    
 }
 
 .input-logout
