@@ -21,8 +21,9 @@
                 </li>
 
             </ul>
+
             <span class="navbar-text">
-                Welcome username
+                Welcome <%= user.username %>
             </span>
             <a href="logout">Logout</a>
             <form action="/logout?_method=DELETE" method="POST">
