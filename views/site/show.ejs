@@ -6,29 +6,29 @@
 
             <h1>Show page</h1>
             <main>
-                <main>
-                    <section class="car-show-card">
-                        <img class="car-show-img" src="<%=car.img %>" alt="">
-                        <div>
-                            <ul class="car-show-info">
 
-                                <li>Model: <%= car.model %>
-                                </li>
-                                <li>Manufacturer: <%= car.manufacturer %>
-                                </li>
-                                <li>Country of Origin: <%= car.country %>
-                                </li>
-                                <li>Year: <%=car.year%>
-                                </li>
+                <section class="car-show-card">
+                    <img class="car-show-img" src="<%=car.img %>" alt="">
+                    <div>
+                        <ul class="car-show-info">
 
-                            </ul>
-                        </div>
-                    </section>
-                    <form action="/show/<%=car._id%>?_method=PUT" method="POST">
-                        <input type="submit" value="Add to Garage">
-                    </form>
-                    </section>
-                </main>
+                            <li>Model: <%= car.model %>
+                            </li>
+                            <li>Manufacturer: <%= car.manufacturer %>
+                            </li>
+                            <li>Country of Origin: <%= car.country %>
+                            </li>
+                            <li>Year: <%=car.year%>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <form action="/show/<%=car._id%>?_method=PUT" method="POST">
+                    <input type="submit" value="Add to Garage">
+                </form>
+                </section>
+            </main>
     </body>
 
     </html>

@@ -222,6 +222,8 @@ top: -60px;
 
 .select-car{
     padding: 3px;
+    border: none;
+    border-radius: 5px;
 }
 .gallery {
     display: flex;
