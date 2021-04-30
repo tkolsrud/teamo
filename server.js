@@ -52,6 +52,11 @@ const authRequired = function (req, res, next) {
     return res.redirect('/login');
 };
 
+app.use((req, res, next) => {
+    app.locals.user = req.session.currentUser;
+
+    next();
+});
 // Admin middleware <feature creep>
 // const adminRequired = (req, res, next) => {
 //     if (req.session.currentUser.admin === "on") {
@@ -64,7 +69,7 @@ const authRequired = function (req, res, next) {
 // Welcome
 app.get("/", function (req, res) {
     const context = { user: req.session.currentUser }
-    res.render("Welcome");
+    res.render("Welcome", context);
 });
 
 //auth controller

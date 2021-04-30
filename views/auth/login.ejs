@@ -1,23 +1,26 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
+
+
         <h1>CarBank</h1>
-        <h2>Sign-in</h2>
-        <!--Username and Password-->
-        <form action="/login" method="POST">
+        <%- include ("../partials/welcomenav.ejs"); %>
+            <h2>Sign-in</h2>
+            <!--Username and Password-->
+            <form action="/login" method="POST">
 
-            <p class="emailtext">Email:</p>
-            <p>
-                <input class="email" type="email" name="email" />
-            </p>
+                <p class="emailtext">Email:</p>
+                <p>
+                    <input class="email" type="email" name="email" />
+                </p>
 
-            <p class="passwordtext">Password:</p>
-            <p>
-                <input class="password" type="password" name="password" />
-            </p>
+                <p class="passwordtext">Password:</p>
+                <p>
+                    <input class="password" type="password" name="password" />
+                </p>
 
-            <input type="submit" value="login">
-        </form>
+                <input type="submit" value="login">
+            </form>
     </body>
 
     </html>

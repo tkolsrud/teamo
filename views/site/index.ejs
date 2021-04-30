@@ -6,17 +6,13 @@
         <%- include ("../partials/navbarPartial.ejs"); %>
 
 
-            <form action="/logout?_method=DELETE" method="POST">
-                <div>
-                    <input type="submit" value="Logout">
-                </div>
             </form>
             <h3>Welcome</h3>
             <main>
-                <form action="" method="GET">
+                <form action="" method="GET" id="dropdown-manufacturer">
                     <label for="car-select">filter by manufacturer:</label>
 
-                    <select name="manufacturer" id="">
+                    <select class="select" name="manufacturer" onchange="this.form.submit()" id="">
                         <option value="">choose a manufacturer</option>
                         <option value="Ford">Ford</option>
                         <option value="Chevrolet">Chevrolet</option>
@@ -30,12 +26,11 @@
                         <option value="Nissan">Nissan</option>
                         <option value="Toyota">Toyota</option>
                     </select>
-                    <input type="submit" value="filter" />
                 </form>
-                <form action="" method="GET">
+                <form action="" method="GET" id="dropdown-country">
                     <label for="car-select">filter by country:</label>
 
-                    <select name="country" id="">
+                    <select class="select" name="country" onchange="this.form.submit()" id="">
                         <option value="">choose by country</option>
                         <option value="USA">USA</option>
                         <option value="Italy">Italy</option>
@@ -43,12 +38,11 @@
                         <option value="Germany">Germany</option>
                         <option value="Japan">Japan</option>
                     </select>
-                    <input type="submit" value="filter" />
                 </form>
-                <form action="" method="GET">
+                <form action="" method="GET" id="dropdown-year">
                     <label for="car-select">filter by Decade:</label>
 
-                    <select name="year" id="">
+                    <select class="select" name="year" onchange="this.form.submit()" id="">
                         <option value="">choose a decade:</option>
                         <option value="195">1950s</option>
                         <option value="196">1960s</option>
@@ -59,7 +53,6 @@
                         <option value="201">2010s</option>
                         <option value="202">2020s</option>
                     </select>
-                    <input type="submit" value="filter" />
                 </form>
                 <ul>
                     <% cars.forEach(car=> { %>
@@ -73,7 +66,6 @@
                         <% })%>
                 </ul>
             </main>
-            >>>>>>> submaster
     </body>
     </body>
 
