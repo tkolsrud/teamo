@@ -9,52 +9,53 @@
                 <a href="/addnew">Add New Car</a>
             </div>
             <main>
-                <form action="" method="GET">
-                    <label for="car-select">filter by manufacturer:</label>
+                <Section class="form-select-car">
+                    <form action="" method="GET">
+                        <label for="car-select">filter by manufacturer:</label>
 
-                    <select name="manufacturer" id="" onchange="this.form.submit()">
-                        <option value="">choose a manufacturer</option>
-                        <option value="Ford">Ford</option>
-                        <option value="Chevrolet">Chevrolet</option>
-                        <option value="Dodge">Dodge</option>
-                        <option value="Lamborghini">Lamborghini</option>
-                        <option value="Audi">Audi</option>
-                        <option value="BMW">BMW</option>
-                        <option value="Porsche">Porsche</option>
-                        <option value="Jaguar">Jaguar</option>
-                        <option value="Honda">Honda</option>
-                        <option value="Nissan">Nissan</option>
-                        <option value="Toyota">Toyota</option>
-                    </select>
-                </form>
-                <form action="" method="GET">
-                    <label for="car-select">filter by country:</label>
+                        <select name="manufacturer" id="" onchange="this.form.submit()">
+                            <option value="">choose a manufacturer</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Dodge">Dodge</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Jaguar">Jaguar</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </form>
+                    <form action="" method="GET">
+                        <label for="car-select">filter by country:</label>
 
-                    <select name="country" id="" onchange="this.form.submit()">
-                        <option value="">choose by country</option>
-                        <option value="USA">USA</option>
-                        <option value="Italy">Italy</option>
-                        <option value="UK">UK</option>
-                        <option value="Germany">Germany</i></option>
-                        <option value="Japan">Japan</option>
-                    </select>
-                </form>
-                <form action="" method="GET">
-                    <label for="car-select">filter by Decade:</label>
+                        <select name="country" id="" onchange="this.form.submit()">
+                            <option value="">choose by country</option>
+                            <option value="USA">USA</option>
+                            <option value="Italy">Italy</option>
+                            <option value="UK">UK</option>
+                            <option value="Germany">Germany</i></option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </form>
+                    <form action="" method="GET">
+                        <label for="car-select">filter by Decade:</label>
 
-                    <select name="year" id="" onchange="this.form.submit()">
-                        <option value="">choose a decade:</option>
-                        <option value="195">1950s</option>
-                        <option value="196">1960s</option>
-                        <option value="197">1970s</option>
-                        <option value="198">1980s</option>
-                        <option value="199">1990s</option>
-                        <option value="200">2000s</option>
-                        <option value="201">2010s</option>
-                        <option value="202">2020s</option>
-                    </select>
-                </form>
-
+                        <select name="year" id="" onchange="this.form.submit()">
+                            <option value="">choose a decade:</option>
+                            <option value="195">1950s</option>
+                            <option value="196">1960s</option>
+                            <option value="197">1970s</option>
+                            <option value="198">1980s</option>
+                            <option value="199">1990s</option>
+                            <option value="200">2000s</option>
+                            <option value="201">2010s</option>
+                            <option value="202">2020s</option>
+                        </select>
+                    </form>
+                </Section>
                 <section class="gallery">
                     <% if(!cars.length) {%>
                         <p>Select By Make, Country, or Year!</p>
