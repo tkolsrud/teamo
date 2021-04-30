@@ -192,13 +192,24 @@ top: -60px;
 .navbar-text
     {
     position: relative;
-    right: -500px;
+    right: -670px;
     }
  /* @font-face {
  font-family: 'Damion', cursive;
     src: url(https://fonts.googleapis.com/css2?family=Damion&display=swap);
 }
      */
+
+.bi bi-person-circle
+     {
+     position: relative;
+    right: -50px;
+     }
+     .circle
+     {
+         display: flex;
+         margin-left: 30px;
+     }
 .navbar-brand
 {
     font-family: 'Damion', cursive;
@@ -287,4 +298,12 @@ top: -60px;
 .car-show-info {
     display: flex;
     flex-direction: column;
+}
+
+.input-logout
+{
+    display: grid;
+    margin-right: 20px;
+    margin-bottom: -21px;
+    
 }
