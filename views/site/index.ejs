@@ -56,11 +56,13 @@
                 </form>
                 <ul>
                     <% cars.forEach(car=> { %>
-                        <li>
+                        <li class="card">
                             <a href="/site/<%=car._id%>">
                                 <%= car.manufacturer %>
                                     <%= car.model %>
                                         <%= car.country %>
+                                            <img class="image-car" src="<%= car.img %>" alt="">
+
                             </a>
                         </li>
                         <% })%>

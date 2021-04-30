@@ -4,22 +4,24 @@
 
         <h1>Admin Show page</h1>
         <%- include ("../partials/navbarPartial.ejs"); %>
-
+            <h2>Car info</h2>
             <main>
-                <section>
-                    <h2>Car info</h2>
-                    <ul>
+                <section class="car-show-card">
+                    <img class="car-show-img" src="<%=car.img %>" alt="">
+                    <div>
+                        <ul class="car-show-info">
 
-                        <li>Model: <%= car.model %>
-                        </li>
-                        <li>Manufacturer: <%= car.manufacturer %>
-                        </li>
-                        <li>Country of Origin: <%= car.country %>
-                        </li>
-                        <li>Year: <%=car.year%>
-                        </li>
+                            <li>Model: <%= car.model %>
+                            </li>
+                            <li>Manufacturer: <%= car.manufacturer %>
+                            </li>
+                            <li>Country of Origin: <%= car.country %>
+                            </li>
+                            <li>Year: <%=car.year%>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </section>
                 <section>
                     <a href="/admin/<%=car._id%>/edit">Edit Car</a>
