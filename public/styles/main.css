@@ -73,6 +73,7 @@ h3{
     color: whitesmoke;
 }
 
+
 .signup {
     position: relative;
     top: 20px;
@@ -424,7 +425,7 @@ h3{
 }
 
 .nav-link:hover {
-    color: whitesmoke;
+    color:#fdc500;
     text-decoration: none;
 }
 .card:active {
@@ -437,6 +438,10 @@ h3{
     text-decoration: none;
 }
 
+.signinwelcomenav:hover {
+    color:#fdc500;
+    text-decoration: none;
+}
 .image-car { 
     object-fit:cover;
     display: flex;
@@ -479,8 +484,10 @@ h3{
     
 }
 
-
-
+.div-avatar{
+    color:whitesmoke;
+    
+}
 
 /* .img-fade img {
     position:absolute;
