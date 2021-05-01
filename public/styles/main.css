@@ -59,8 +59,15 @@ h3{
     background-position: top;
 }
 
+.div-nav-username{
+    color: whitesmoke;
+    margin-right: 12px;
+    margin-top: 19px;
+}
+
 .input-logout {
     border: none;
+    margin-top: -12px;
 }
 /* === Welcome Page === */
 .welcome-title{
@@ -253,10 +260,15 @@ h3{
     display: grid;
     margin-right: 20px;
     margin-bottom: -21px;
+    color: whitesmoke;
+    background-color: rgb(28, 26, 26);
     
 }
 
-
+.input-logout:hover {
+    color:#fdc500;
+    text-decoration: none;
+}
 
 
 .header-show{
@@ -486,6 +498,7 @@ h3{
 
 .div-avatar{
     color:whitesmoke;
+    margin-right: 30px;
     
 }
 
