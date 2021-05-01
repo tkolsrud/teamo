@@ -24,11 +24,6 @@ h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
-/* h3{
-    font-family: "Damion", cursive;
-} */
-
-
 
 main{
         border-top: 4px solid rgb(83, 82, 82);
@@ -49,10 +44,7 @@ h3{
     justify-content: center;   
 }
 
-.welcome-title{
-    padding: 20px;
-    margin-top: 50px;
-}
+/* === NavBar === */
 .navbar {
     background-color: rgb(28, 26, 26);
     height: 125px;
@@ -60,9 +52,6 @@ h3{
     
 }
 
-.header-show{
-    margin-top: 45px;
-}
 .banner {
     height: 175px;
     width: 100vw;
@@ -70,27 +59,20 @@ h3{
     background-position: top;
 }
 
-.div-addnew {
-    display: flex;
-    justify-content: center;
-}
-
 .input-logout {
     border: none;
 }
+/* === Welcome Page === */
+.welcome-title{
+    padding: 20px;
+    margin-top: 50px;
+}
+
 .signinwelcomenav {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.signin {
-    position: relative;
-    top: -300px;
-    right: -500px;
-    color: white;
-    background-color: blue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
 .signup {
     position: relative;
     top: 20px;
@@ -99,16 +81,71 @@ h3{
     background-color: blue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+.section-welcome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-btn-signup{
+    width: 100vw;;
+    display: flex;
+}
+
+.a-btn-signup {
+    margin: auto;
+    width: 350px;
+    padding: 10px;
+    margin-top: 25px;
+}
+.audi-r8-back {
+    position: relative;
+    right: -60px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.lambo-EVO-back {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+
+.ford-mustang-back {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+ .bmw-M4-front {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+/* === Login === */
+.signin {
+    position: relative;
+    top: -300px;
+    right: -500px;
+    color: white;
+    background-color: blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 .username {
     position: relative;
     top: 20px;
     right: 0px;
 }
-.reenter {
-    position: relative;
-    top: 80px;
-    right: -35px;
-}
+
 .reenter {
     position: relative;
     top: -20px;
@@ -118,22 +155,7 @@ h3{
     top: 0px;
     left: -1px;
 }
-.usernametext {
-    position: relative;
-    left: -160px;
-    top: 60px;
-}
-.passwordtext {
-    position: relative;
-    left: -158px;
-    top: 40px;
-}
 
-.reentertext {
-    position: relative;
-    left: -190px;
-    top: 20px;
-}
 
 .submitbutton {
     position: relative;
@@ -171,36 +193,7 @@ h3{
     position: relative;
     top: -60px;
     }
-.audi-r8-back {
-    position: relative;
-    right: -60px;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
-}
 
-.lambo-EVO-back {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-}
-
-.ford-mustang-back {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-}
- .bmw-M4-front {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-}
 .nav-link {
     color: whitesmoke;
 }
@@ -253,6 +246,121 @@ h3{
     border-radius: 5px;
     background-color: whitesmoke;
 }
+
+.input-logout
+{
+    display: grid;
+    margin-right: 20px;
+    margin-bottom: -21px;
+    
+}
+
+
+
+
+.header-show{
+    margin-top: 45px;
+}
+
+
+.div-addnew {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.div-admin {
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.btn-removecar{
+    background-color: rgb(209, 23, 23);
+    color: whitesmoke;
+}
+
+/* === Register === */
+.form-register{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.div-register{
+    align-self: flex-end;
+}
+
+.checkbox-admin{
+    margin-left: 8px;
+}
+
+.input-email{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-username{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-password{
+    padding:3px;
+    margin-left: 10px;
+}
+
+.header-registration{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.p-register_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.reenter {
+    position: relative;
+    top: 80px;
+    right: -35px;
+}
+/* === Login === */
+.form-login {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.header-login{
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.div-login{
+    align-self: flex-end;
+}
+
+.input-login{
+    margin-top: 35px;
+}
+
+
+/* === index/adminhome === */
 .gallery {
     display: flex;
     flex-direction: row;
@@ -371,109 +479,9 @@ h3{
     
 }
 
-.input-logout
-{
-    display: grid;
-    margin-right: 20px;
-    margin-bottom: -21px;
-    
-}
 
-.section-welcome{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.div-btn-signup{
-    width: 100vw;;
-    display: flex;
-}
 
-.a-btn-signup {
-    margin: auto;
-    width: 350px;
-    padding: 10px;
-    margin-top: 25px;
-}
-
-.form-register{
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
-.form-login {
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
-.div-register{
-    align-self: flex-end;
-}
-
-.div-admin {
-    width: 200px;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.checkbox-admin{
-    margin-left: 8px;
-}
-
-.input-email{
-    padding:3px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-.input-username{
-    padding:3px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-.input-password{
-    padding:3px;
-    margin-left: 10px;
-}
-
-.header-registration{
-    margin-top: 40px;
-    padding: 10px;
-}
-
-.header-login{
-    margin-top: 40px;
-    padding: 10px;
-    margin-bottom: 35px;
-}
-
-.p-register_content{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-
-.div-login{
-    align-self: flex-end;
-}
-
-.input-login{
-    margin-top: 35px;
-}
-
-.btn-removecar{
-    background-color: maroon;
-    color: whitesmoke;
-}
 /* .img-fade img {
     position:absolute;
     top:0;
