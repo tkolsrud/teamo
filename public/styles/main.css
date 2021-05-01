@@ -165,6 +165,7 @@ h3{
 }
 
 
+
 .submitbutton {
     position: relative;
     left: -90px;
@@ -366,9 +367,16 @@ h3{
 }
 
 .input-login{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
+.span-invalid-password{
+    /* justify-self: center; */
+    align-self: flex-end;
+    color: red;
+    margin-top: 10px;    
+
+}
 
 /* === index/adminhome === */
 .gallery {
