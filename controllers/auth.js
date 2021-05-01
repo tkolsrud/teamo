@@ -20,6 +20,12 @@ router.post('/register', async function (req, res) {
             return res.redirect('/login'); // if the user exists redirect to login
         }
 
+        if (req.body.retypepassword !== req.body.password) {
+            return res.render('auth/retype');
+        }
+
+
+
         const salt = await bcrypt.genSalt(10); // how many iterations of salt we're going through (encryption)
         const hash = await bcrypt.hash(req.body.password, salt); // pulling the password from the req.body and salting (encrypting it)
         req.body.password = hash; // replacing the value of req.body.password with the hashed password

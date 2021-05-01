@@ -328,6 +328,13 @@ h3{
 .input-password{
     padding:3px;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.retypepassword{
+    padding: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .header-registration{
@@ -346,6 +353,10 @@ h3{
     position: relative;
     top: 80px;
     right: -35px;
+}
+
+.passwordcheck{
+    color: red;    
 }
 /* === Login === */
 .form-login {

@@ -1,0 +1,48 @@
+<%- include ("../partials/headerpartial.ejs"); %>
+
+    <body>
+        <%- include ("../partials/welcomenav.ejs"); %>
+            <h2 class="header-registration">Registration</h2>
+            <p class="p-register_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim
+                enim massa, et pellentesque
+                dolor
+                mattis
+            </p>
+            <form class="form-register" action="/register" method="POST">
+
+
+
+                <div class="div-register">
+                    <label for="email">Email:</label>
+                    <input type="email" class="input-email" placeholder="Email" name="email">
+                </div>
+                <div class="div-register">
+                    <label for="username">Username:</label>
+                    <input type="text" class="input-username" placeholder="Username" name="username">
+                </div>
+                <div class="div-register">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" class="input-password" placeholder="Password" name="password">
+                </div>
+                <div class="div-register">
+                    <label for="retype-password">Retype Password:</label>
+                    <input class="retypepassword" type="password" name="retypepassword" id=""
+                        placeholder="Retype Password">
+                </div>
+                <div class="div-register">
+                    <span class="passwordcheck">Passwords do not match</span>
+                </div>
+
+
+
+
+                <div class="div-admin">
+                    <label for="admin">Administrator Priveleges</label>
+                    <input class="checkbox-admin" type="checkbox" name="admin" />
+                </div>
+                <!-- <p class="reentertext">Re-enter Password:</p><input class="reenter" type="text" name="re-enter password"
+         /> -->
+                <!--Button-->
+                <input class="btn btn-dark" type="submit" value="Submit">
+            </form>
+    </body>
