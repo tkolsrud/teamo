@@ -1,4 +1,7 @@
 console.log('sanity check');
 
-// let $password = $('#password');
-// let $passwordCheck = $('#passwordcheck');
+const slideShow = function () {
+    $('#welcome-images').carousel({ interval: 1000 });
+};
+
+slideShow();
