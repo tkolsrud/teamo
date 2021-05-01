@@ -28,7 +28,9 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     font-family: "Damion", cursive;
 } */
 
-
+main{
+        border-top: 4px solid rgb(83, 82, 82);
+}
 
 ul {
     display: inline-flex;
