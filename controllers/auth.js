@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const db = require('../models');
+const e = require('express');
+const { response } = require('express');
 
 /** Register Route ***/
 
@@ -17,6 +19,12 @@ router.post('/register', async function (req, res) {
         if (foundUser) {
             return res.redirect('/login'); // if the user exists redirect to login
         }
+
+        if (req.body.retypepassword !== req.body.password) {
+            return res.render('auth/retype');
+        }
+
+
 
         const salt = await bcrypt.genSalt(10); // how many iterations of salt we're going through (encryption)
         const hash = await bcrypt.hash(req.body.password, salt); // pulling the password from the req.body and salting (encrypting it)
@@ -48,10 +56,12 @@ router.post('/login', async function (req, res) {
 
         const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db)
 
-        if (!match) return res.redirect('auth/faillogin');
+        if (!match) {
+
+            return res.render("auth/retry");
 
 
-
+        }
 
 
 
