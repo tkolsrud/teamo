@@ -1,17 +1,35 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
-        <h1>New cars woo</h1>
+
         <%- include ("../partials/navbarPartial.ejs"); %>
 
             <main>
-                <form action="/addnew" method="Post">
-                    <input type="text" name="manufacturer" placeholder="Make" />
-                    <input type="text" name="country" placeholder="country" />
-                    <input type="text" name="model" placeholder="model" />
-                    <input type="text" name="year" placeholder="year" />
-                    <input type="submit" value="Add Car" />
-                </form>
+                <section class="section-header-addnew">
+                    <h1 class="header-addnew">Add New Car</h1>
+                </section>
+
+                <section class="section-form-addnew">
+                    <form class="form-addnew" action="/addnew" method="Post">
+                        <div class="div-addnew">
+                            <label for="manufacturer">Make:</label>
+                            <input type="text" name="manufacturer" placeholder="Make" />
+                        </div>
+                        <div class="div-addnew">
+                            <label for="country">Country:</label>
+                            <input type="text" name="country" placeholder="Country" />
+                        </div>
+                        <div class="div-addnew">
+                            <label for="model">Model:</label>
+                            <input type="text" name="model" placeholder="Model" />
+                        </div>
+                        <div class="div-addnew">
+                            <label for="year">Year:</label>
+                            <input type="text" name="year" placeholder="Year" />
+                        </div>
+                        <input class="btn btn-dark input-addnew" type="submit" value="Add Car">
+                    </form>
+                </section>
             </main>
 
     </body>
