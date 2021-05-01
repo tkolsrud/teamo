@@ -1,21 +1,14 @@
 console.log('sanity check');
 
-$(function () {
-    $(".select").on("change keyup", function () {
-        $("#dropdown-year").submit();
-    });
+function checkPasswordMatch() {
+    let password = $("#txtNewPassword").val();
+    let confirmPassword = $("#txtConfirmPassword").val();
+    if (password != confirmPassword)
+        $("#CheckPasswordMatch").html("Passwords does not match!");
+    else
+        $("#CheckPasswordMatch").html("Passwords match.");
+}
+
+$(document).ready(function () {
+    $("#txtConfirmPassword").keyup(checkPasswordMatch);
 });
-
-$(function () {
-    $(".select").on("change keyup", function () {
-        $("#dropdown-country").submit();
-    });
-});
-
-$(function () {
-    $(".select").on("change keyup", function () {
-        $("#dropdown-manufacturer").submit();
-    });
-});
-
-
