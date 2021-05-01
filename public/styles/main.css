@@ -222,10 +222,7 @@ h3{
 }
      */
 
-.circle {
-     display: flex;
-    margin-left: 30px;
-}
+
 .navbar-brand {
     font-family: 'Damion', cursive;
     color: whitesmoke;
@@ -500,6 +497,50 @@ h3{
     color:whitesmoke;
     margin-right: 30px;
     
+}
+
+/* === Add New Car === */
+.section-header-addnew{
+    display:flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.header-addnew{
+    margin-top: 45px;
+}
+
+/* .section-form-addnew{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+} */
+
+.form-addnew{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.form-addnew > input {
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+
+.div-addnew{
+    align-self: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.input-addnew{
+    align-self: center;
+    margin-right: -12px;
 }
 
 /* .img-fade img {
