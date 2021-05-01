@@ -28,6 +28,13 @@ h2{
     font-family: "Damion", cursive;
 } */
 
+
+
+main{
+        border-top: 4px solid rgb(83, 82, 82);
+}
+
+
 ul {
     display: inline-flex;
 
