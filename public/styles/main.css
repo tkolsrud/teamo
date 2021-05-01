@@ -48,6 +48,11 @@ h3{
     display: flex;
     justify-content: center;   
 }
+
+.welcome-title{
+    padding: 20px;
+    margin-top: 50px;
+}
 .navbar {
     background-color: rgb(28, 26, 26);
     height: 100px;
@@ -369,7 +374,96 @@ h3{
     
 }
 
+.section-welcome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.div-btn-signup{
+    width: 100vw;;
+    display: flex;
+}
+
+.a-btn-signup {
+    margin: auto;
+    width: 350px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.form-register{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form-login {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.div-register{
+    align-self: flex-end;
+}
+
+.div-admin {
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox-admin{
+    margin-left: 8px;
+}
+
+.input-email{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-username{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-password{
+    padding:3px;
+    margin-left: 10px;
+}
+
+.header-registration{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.header-login{
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.p-register_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.div-login{
+    align-self: flex-end;
+}
+
+.input-login{
+    margin-top: 35px;
+}
 /* .img-fade img {
     position:absolute;
     top:0;

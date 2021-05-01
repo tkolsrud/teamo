@@ -2,20 +2,40 @@
 
     <body>
         <%- include ("../partials/welcomenav.ejs"); %>
-            <h2>Registration</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim enim massa, et pellentesque
+            <h2 class="header-registration">Registration</h2>
+            <p class="p-register_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim
+                enim massa, et pellentesque
                 dolor
                 mattis
             </p>
-            <form action="/register" method="POST">
-                <p class="emailtext">E-mail:</p><input class="email" type="email" placeholder="email" name="email" />
-                <p class="usernametext">Username:</p><input class="username" type="text" name="username" />
-                <p class="passwordtext">Password:</p><input class="password" type="password" name="password" />
-                <p class="admintext">Administrator Privileges</p><input type="checkbox" name="admin" />
+            <form class="form-register" action="/register" method="POST">
+
+
+
+                <div class="div-register">
+                    <label for="email">Email:</label>
+                    <input type="email" class="input-email" placeholder="Email" name="email">
+                </div>
+                <div class="div-register">
+                    <label for="username">Username:</label>
+                    <input type="text" class="input-username" placeholder="Username" name="username">
+                </div>
+                <div class="div-register">
+                    <label for="password">Password:</label>
+                    <input type="password" class="input-password" placeholder="Password" name="password">
+                </div>
+
+
+
+
+                <div class="div-admin">
+                    <label for="admin">Administrator Priveleges</label>
+                    <input class="checkbox-admin" type="checkbox" name="admin" />
+                </div>
                 <!-- <p class="reentertext">Re-enter Password:</p><input class="reenter" type="text" name="re-enter password"
          /> -->
                 <!--Button-->
-                <input class="submitbutton" type="submit" value="Submit">
+                <input class="btn btn-dark" type="submit" value="Submit">
             </form>
     </body>
 
