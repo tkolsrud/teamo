@@ -1,73 +1,85 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
-    <%- include ("../partials/navbarPartial.ejs"); %>
-        <select class="select" name="manufacturer" onchange="this.form.submit()" id="">
-            <option value="">choose a manufacturer</option>
-            <option value="Ford">Ford</option>
-            <option value="Chevrolet">Chevrolet</option>
-            <option value="Dodge">Dodge</option>
-            <option value="Lamborghini">Lamborghini</option>
-            <option value="Audi">Audi</option>
-            <option value="BMW">BMW</option>
-            <option value="Porsche">Porsche</option>
-            <option value="Jaguar">Jaguar</option>
-            <option value="Honda">Honda</option>
-            <option value="Nissan">Nissan</option>
-            <option value="Toyota">Toyota</option>
-        </select>
-        </form>
-        <form action="" method="GET" id="dropdown-country">
-            <label for="car-select">filter by country:</label>
-            <select class="select" name="country" onchange="this.form.submit()" id="">
-                <option value="">choose by country</option>
-                <option value="USA">USA<span class="usaimage" img src=></span></option>
-                <option value="Italy">Italy</option>
-                <option value="UK">UK</option>
-                <option value="Germany">Germany</option>
-                <option value="Japan">Japan</option>
-            </select>
-        </form>
-        <form action="" method="GET" id="dropdown-year">
-            <label for="car-select">filter by Decade:</label>
-            <select class="select" name="year" onchange="this.form.submit()" id="">
-                <option value="">choose a decade:</option>
-                <option value="195">1950s</option>
-                <option value="196">1960s</option>
-                <option value="197">1970s</option>
-                <option value="198">1980s</option>
-                <option value="199">1990s</option>
-                <option value="200">2000s</option>
-                <option value="201">2010s</option>
-                <option value="202">2020s</option>
-            </select>
-        </form>
-        <section class="gallery">
-            <% if(!cars.length) {%>
-                <p>Select By Make, Country, or Year!</p>
-                <% } %>
-                    <% cars.forEach(car=> { %>
-
-                        <a class="card" href="/site/<%=car._id%>">
-                            <div class="card_manfufacturer">
-                                Make: <%= car.manufacturer%>
-                            </div>
-                            <div class="card_model">
-                                Model: <%= car.model%>
-                            </div>
-                            <div class="card_year">
-                                Year: <%= car.year%>
-                            </div>
-                            <div class="card_country">
-                                Country of Origin: <%= car.country%>
-                            </div>
-                            <div>
-                                <img class="image-car" src="<%= car.img %>" alt="">
-                            </div>
-                        </a>
-                        <% }) %>
-        </section>
-        </main>
-        </body>
+    <body>
 
 
-        </html>
+        <%- include ("../partials/navbarPartial.ejs"); %>
+            <main>
+                <h3 class="header-browse-cars">Browse Cars</h3>
+                <Section class="section-select-car">
+                    <form class="form-select-car" action="" method="GET">
+                        <label for="car-select">Filter By Manufacturer:</label>
+
+                        <select class="select-car" name="manufacturer" id="" onchange="this.form.submit()">
+                            <option value="">Choose A Manufacturer</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Dodge">Dodge</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Jaguar">Jaguar</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
+                    </form>
+                    <form class="form-select-car" action="" method="GET">
+                        <label for="car-select">Filter By Country:</label>
+
+                        <select class="select-car" name="country" id="" onchange="this.form.submit()">
+                            <option value="">Choose By Country</option>
+                            <option value="USA">USA</option>
+                            <option value="Italy">Italy</option>
+                            <option value="UK">UK</option>
+                            <option value="Germany">Germany</i></option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </form>
+                    <form class="form-select-car" action="" method="GET">
+                        <label for="car-select">Filter By Decade:</label>
+
+                        <select class="select-car" name="year" id="" onchange="this.form.submit()">
+                            <option value="">Choose A Decade:</option>
+                            <option value="195">1950s</option>
+                            <option value="196">1960s</option>
+                            <option value="197">1970s</option>
+                            <option value="198">1980s</option>
+                            <option value="199">1990s</option>
+                            <option value="200">2000s</option>
+                            <option value="201">2010s</option>
+                            <option value="202">2020s</option>
+                        </select>
+                    </form>
+                </Section>
+                <section class="gallery">
+                    <% if(!cars.length) {%>
+                        <p>Select By Make, Country, or Year!</p>
+                        <% } %>
+                            <% cars.forEach(car=> { %>
+
+                                <a class="card" href="/site/<%=car._id%>">
+                                    <div class="card_manfufacturer">
+                                        Make: <%= car.manufacturer%>
+                                    </div>
+                                    <div class="card_model">
+                                        Model: <%= car.model%>
+                                    </div>
+                                    <div class="card_year">
+                                        Year: <%= car.year%>
+                                    </div>
+                                    <div class="card_country">
+                                        Country of Origin: <%= car.country%>
+                                    </div>
+                                    <div>
+                                        <img class="image-car" src="<%= car.img %>" alt="">
+                                    </div>
+                                </a>
+                                <% }) %>
+                </section>
+            </main>
+    </body>
+
+
+    </html>
