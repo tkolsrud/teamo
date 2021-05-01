@@ -15,36 +15,38 @@ body
 }
 h1
 {
-text-align: left;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 h2{
-text-align: center;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
 /* h3{
     font-family: "Damion", cursive;
 } */
 
+
+
 main{
         border-top: 4px solid rgb(83, 82, 82);
 }
+
 
 ul {
     display: inline-flex;
 
 } 
 
-li{
+li {
     list-style-type: none;
 }
 
-h3{
+h3{ 
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .navbar {
     background-color: rgb(28, 26, 26);
@@ -56,19 +58,23 @@ h3{
     height: 200px;
     width: 100vw;
     object-fit: cover;
-    background-position:top;
+    background-position: top;
 }
 
-.div-addnew{
-    display:flex;
+.div-addnew {
+    display: flex;
     justify-content: center;
 }
 
-.input-logout{
+.input-logout {
     border: none;
 }
-.signin
-{
+.signinwelcomenav {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.signin {
     position: relative;
     top: -300px;
     right: -500px;
@@ -76,8 +82,7 @@ h3{
     background-color: blue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.signup
-{
+.signup {
     position: relative;
     top: 20px;
     right: -5px;
@@ -85,70 +90,62 @@ h3{
     background-color: blue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.username
-{
+.username {
     position: relative;
     top: 20px;
     right: 0px;
 }
-.reenter
-{
+.reenter {
     position: relative;
     top: 80px;
     right: -35px;
 }
-.reenter
-{
+.reenter {
     position: relative;
     top: -20px;
 }
-.password{
+.password {
     position: relative;
     top: 0px;
     left: -1px;
 }
-.usernametext
-{
+.usernametext {
     position: relative;
     left: -160px;
     top: 60px;
 }
-.passwordtext
-{
+.passwordtext {
     position: relative;
     left: -158px;
     top: 40px;
 }
-.reentertext
-{
+
+.reentertext {
     position: relative;
     left: -190px;
     top: 20px;
 }
 
-.submitbutton{
+.submitbutton {
     position: relative;
     left: -90px;
     top: 50px;
 }
 
-.email{
+.email {
     position: relative;
     left: 0px;
     top: 40px;
 }
-.emailtext
-{
+.emailtext {
     position: relative;
     left: -146px;
     top: 80px;
 }
-.aboutheader
-{
+.aboutheader {
     text-align: center;
 }
-.signout
-{
+.signout {
     position: relative;
     top: -90px;
     right: -500px;
@@ -156,49 +153,46 @@ h3{
     background-color: blue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.welcome{
-position: relative;
-left: -200px;
+.welcome {
+    position: relative;
+    left: -200px;
 }
-.matchingvehichlesheader{
-position: relative;
-top: -60px;
-    }
- .audi-r8-back
-    {
-        position: relative;
-        right: -60px;
-        margin-bottom: 20px;
-        width: 300px;
-        height: 200px;
-    }
 
- .lambo-EVO-back
-    {
-        position: relative;
-        top: -10px;
-        right: -60px;
-        width: 300px;
-        height: 200px;
+.matchingvehichlesheader {
+    position: relative;
+    top: -60px;
     }
+.audi-r8-back {
+    position: relative;
+    right: -60px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
 
-.ford-mustang-back
-    {
-        position: relative;
-        top: -10px;
-        right: -60px;
-        width: 300px;
-        height: 200px;
-    }
- .bmw-M4-front
-    {
-        position: relative;
-        top: -10px;
-        right: -60px;
-        width: 300px;
-        height: 200px;
-    }
-.nav-link{
+.lambo-EVO-back {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+
+.ford-mustang-back {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+ .bmw-M4-front {
+    position: relative;
+    top: -10px;
+    right: -60px;
+    width: 300px;
+    height: 200px;
+}
+.nav-link {
     color: whitesmoke;
 }
 
@@ -206,31 +200,23 @@ top: -60px;
     display: flex;
     width: 400px;
     color: whitesmoke;
-    }
-.navbar-text
-    {
+}
+.navbar-text {
     position: relative;
     right: -670px;
     color: whitesmoke;
-    }
+}
  /* @font-face {
  font-family: 'Damion', cursive;
     src: url(https://fonts.googleapis.com/css2?family=Damion&display=swap);
 }
      */
 
-.bi bi-person-circle
-     {
-     position: relative;
-    right: -50px;
-     }
-     .circle
-     {
-         display: flex;
-         margin-left: 30px;
-     }
-.navbar-brand
-{
+.circle {
+     display: flex;
+    margin-left: 30px;
+}
+.navbar-brand {
     font-family: 'Damion', cursive;
     color: whitesmoke;
     font-size: 50px;
@@ -245,16 +231,14 @@ top: -60px;
     margin:auto;
     display: block;
     width: 435px;
-    padding: 15px;    
-    
+    padding: 15px;      
 }
 
-.form-select-car{
-    padding: 5px;
-    
+.form-select-car {
+    padding: 5px; 
 }
 
-.select-car{
+.select-car {
     padding: 3px;
     border: none;
     border-radius: 5px;
@@ -270,12 +254,9 @@ top: -60px;
     padding: 30px;
     justify-content: center;
     width: 100vw;
-    
-        
 }
 
 .card {
-
     display: flex;
     flex-direction: column;    
     flex: 1 0 30%;
@@ -295,54 +276,51 @@ top: -60px;
     transform: scale(1.01); 
 }
 
-.nav-link:hover{
+.nav-link:hover { 
     color: whitesmoke;
     transform: scale(1.01);
 }
 
 .card:link {
     color: rgb(44, 41, 41);
-   text-decoration: none;
+    text-decoration: none;
 }
 
 .nav-link:link {
     color: whitesmoke;
-   text-decoration: none;
+    text-decoration: none;
 }
 
-.card:visited 
-{
+.card:visited {
     color: rgb(44, 41, 41);
-   text-decoration: none;
+    text-decoration: none;
 }
 
-.nav-link:visited{
-     color: whitesmoke;
-   text-decoration: none;
-}
-
-.card:hover 
-{
-    color: rgb(44, 41, 41);
-   text-decoration: none;
-}
-
-.nav-link:hover{
+.nav-link:visited {
     color: whitesmoke;
-   text-decoration: none;
+    text-decoration: none;
 }
-.card:active
-{
+
+.card:hover {
     color: rgb(44, 41, 41);
-   text-decoration: none;
+    text-decoration: none;
 }
 
- .nav-link:active{
-      color: whitesmoke;
-   text-decoration: none;
- }
+.nav-link:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.card:active {
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
 
-.image-car{
+.nav-link:active {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.image-car { 
     object-fit:cover;
     display: flex;
     max-height: 250px;
@@ -352,12 +330,10 @@ top: -60px;
     padding-top: 10px;
 }
 
-.info-car{
+.info-car {
     height: 5%;
     
 }
-
-
 
 .car-show-card {
     display: flex;
@@ -371,7 +347,6 @@ top: -60px;
     width: auto;
     height: auto;
     border-radius: 5px;
-    
 }
 
 .car-show-info {
@@ -381,7 +356,7 @@ top: -60px;
     margin-top: 400px;
 }
 
-.car-show-info > li{
+.car-show-info > li {
     padding: 5px;
     
 }
