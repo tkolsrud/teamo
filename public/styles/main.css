@@ -55,12 +55,16 @@ h3{
 }
 .navbar {
     background-color: rgb(28, 26, 26);
-    height: 100px;
+    height: 125px;
     border-bottom: 4px solid rgb(83, 82, 82);
     
 }
+
+.header-show{
+    margin-top: 45px;
+}
 .banner {
-    height: 200px;
+    height: 175px;
     width: 100vw;
     object-fit: cover;
     background-position: top;
@@ -273,7 +277,7 @@ h3{
     text-decoration: none;
     color: rgb(44, 41, 41);
     transition: all .1s ease-in-out; 
-    border: 2px solid rgb(178, 178, 178); 
+    border: 2px solid rgb(192, 190, 190); 
     background-color: whitesmoke; 
 }
 .card:hover { 
@@ -341,6 +345,7 @@ h3{
 }
 
 .car-show-card {
+    margin-top: 45px;
     display: flex;
     flex-direction: row;
     justify-content: center;    
@@ -358,7 +363,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-content: flex-end;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .car-show-info > li {
@@ -463,6 +468,11 @@ h3{
 
 .input-login{
     margin-top: 35px;
+}
+
+.btn-removecar{
+    background-color: maroon;
+    color: whitesmoke;
 }
 /* .img-fade img {
     position:absolute;

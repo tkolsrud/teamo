@@ -4,25 +4,26 @@
 
         <%- include ("../partials/navbarPartial.ejs"); %>
 
-            <h1>Show page</h1>
+
             <main>
+                <h2 class="header-show">Car Info</h2>
 
                 <section class="car-show-card">
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
                         <ul class="car-show-info">
 
-                            <li><u>Model</u>: <%= car.model %>
+                            <li>Model: <%= car.model %>
                             </li>
-                            <li><u>Manufacturer</u>: <%= car.manufacturer %>
+                            <li>Manufacturer: <%= car.manufacturer %>
                             </li>
-                            <li><u>Country of Origin</u>: <%= car.country %>
+                            <li>Country of Origin: <%= car.country %>
                             </li>
-                            <li><u>Year</u>: <%=car.year%>
+                            <li>Year: <%=car.year%>
                             </li>
                             <li>
                                 <form action="/show/<%=car._id%>?_method=PUT" method="POST">
-                                    <input type="submit" value="Add to Garage">
+                                    <input class="btn btn-dark" type="submit" value="Add To Garage">
                                 </form>
                             </li>
                         </ul>
