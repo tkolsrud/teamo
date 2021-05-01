@@ -401,6 +401,14 @@ h3{
     align-content: center;
 }
 
+.form-login {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
 .div-register{
     align-self: flex-end;
 }
@@ -436,11 +444,25 @@ h3{
     padding: 10px;
 }
 
+.header-login{
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
 .p-register_content{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 35px;
+}
+
+.div-login{
+    align-self: flex-end;
+}
+
+.input-login{
+    margin-top: 35px;
 }
 /* .img-fade img {
     position:absolute;
