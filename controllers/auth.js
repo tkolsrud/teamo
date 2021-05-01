@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const db = require('../models');
+const e = require('express');
+const { response } = require('express');
 
 /** Register Route ***/
 
@@ -48,10 +50,12 @@ router.post('/login', async function (req, res) {
 
         const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db)
 
-        if (!match) return res.redirect('auth/faillogin');
+        if (!match) {
+
+            return res.render("auth/retry");
 
 
-
+        }
 
 
 
