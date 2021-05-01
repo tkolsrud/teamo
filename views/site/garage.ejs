@@ -1,20 +1,13 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
-
-
-
         <!--Navigation bar-->
         <%- include ("../partials/navbarPartial.ejs"); %>
-
-
-
             <section class="gallery">
                 <% if(!cars.length) {%>
                     <p>Select By Make, Country, or Year!</p>
                     <% } %>
                         <% cars.forEach(car=> { %>
-
                             <a class="card" href="/garage/<%=car._id%>">
                                 <div class="card_manfufacturer">
                                     Make: <%= car.manufacturer%>
