@@ -48,8 +48,18 @@ router.post('/login', async function (req, res) {
 
         const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db)
 
-        //if not match send error:
-        if (!match) return res.send('password invalid');
+        if (!match) return res.redirect('auth/faillogin');
+
+
+
+
+
+
+
+
+
+        // // if not match send error:
+        // if (!match) return res.send('password invalid');
 
         // if there is a match create session(cookie) and redirect home
         req.session.currentUser = { //creates the cookie tied to the current user
