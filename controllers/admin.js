@@ -22,7 +22,7 @@ router.get('/adminhome', async (req, res) => {
     }
 });
 
-/* === AddNew Route ==== */
+/* === Add New Route ==== */
 router.get('/addnew', (req, res) => {
     return res.render('admin/addnew');
 })

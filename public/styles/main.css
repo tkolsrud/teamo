@@ -1,32 +1,30 @@
-
 *{
     box-sizing: border-box;
     padding: none;
     margin: none;
 }
 
-body
-{
+body {
     /* display: block; */
     /* text-align: center; */
     height: 100vh;
+    font-family: 'Mukta Vaani', sans-serif;
     background-color: #ebeced;
-    font-family:'Asap Condensed', sans-serif;
+    /*font-family:'Asap Condensed', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
-h1
-{
+h1 {
     text-align: left;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-h2{
+h2 {
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
 }
 
-main{
-        border-top: 4px solid rgb(83, 82, 82);
+main {
+    border-top: 4px solid rgb(83, 82, 82);
 }
 
 
@@ -39,7 +37,7 @@ li {
     list-style-type: none;
 }
 
-h3{ 
+h3 { 
     display: flex;
     justify-content: center;   
 }
@@ -69,18 +67,21 @@ h3{
     border: none;
     margin-top: -12px;
 }
+
 /* === Welcome Page === */
 .welcome-title{
     padding: 20px;
     margin-top: 50px;
+}
+.welcome-images
+{
+    max-width: 100px;
 }
 
 .signinwelcomenav {
     text-decoration: none;
     color: whitesmoke;
 }
-
-
 .signup {
     position: relative;
     top: 20px;
@@ -103,49 +104,24 @@ h3{
 }
 
 .carousel {
-    max-height: 375px;
+    max-height: 900px;
     max-width: 500px;
     height: auto;
 }
 
-
+.carousel-item
+{
+    max-width: 500px;
+}
 
 .a-btn-signup {
+
     margin: auto;
     width: 350px;
     padding: 10px;
     margin-top: 25px;
 }
-/* .audi-r8-back {
-    position: relative;
-    right: -60px;
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
-}
 
-.lambo-EVO-back {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-}
-
-.ford-mustang-back {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-}
- .bmw-M4-front {
-    position: relative;
-    top: -10px;
-    right: -60px;
-    width: 300px;
-    height: 200px;
-} */
 /* === Login === */
 .signin {
     position: relative;
@@ -172,8 +148,6 @@ h3{
     left: -1px;
 }
 
-
-
 .submitbutton {
     position: relative;
     left: -90px;
@@ -185,14 +159,17 @@ h3{
     left: 0px;
     top: 40px;
 }
+
 .emailtext {
     position: relative;
     left: -146px;
     top: 80px;
 }
+
 .aboutheader {
     text-align: center;
 }
+
 .signout {
     position: relative;
     top: -90px;
@@ -209,7 +186,7 @@ h3{
 .matchingvehichlesheader {
     position: relative;
     top: -60px;
-    }
+}
 
 .nav-link {
     color: whitesmoke;
@@ -231,11 +208,12 @@ h3{
 }
      */
 
-
 .navbar-brand {
+    display: flex;
     font-family: 'Damion', cursive;
     color: whitesmoke;
     font-size: 50px;
+    margin-top: -10px; 
 }
 
 .navlinks_left {
@@ -243,7 +221,7 @@ h3{
     width: 400px;
  }
 
-.section-select-car{
+.section-select-car {
     margin:auto;
     display: block;
     width: 435px;
@@ -261,8 +239,7 @@ h3{
     background-color: whitesmoke;
 }
 
-.input-logout
-{
+.input-logout {
     display: grid;
     margin-right: 20px;
     margin-bottom: -21px;
@@ -276,30 +253,28 @@ h3{
     text-decoration: none;
 }
 
-
-.header-show{
+.header-show {
     margin-top: 45px;
 }
 
+
+{
+    display: flex;
+    justify-content: center;
+    max-height: 600px;
+}
 
 .div-addnew {
     display: flex;
     justify-content: center;
 }
-
-
-
-
 .div-admin {
     width: 200px;
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
+  
 }
-
-
-
-
 
 .btn-removecar{
     background-color: rgb(209, 23, 23);
@@ -320,7 +295,8 @@ h3{
 }
 
 .checkbox-admin{
-    margin-left: 8px;
+    margin-right: -50px;
+    margin-bottom: -50px;
 }
 
 .input-email{
@@ -394,12 +370,22 @@ h3{
     align-self: flex-end;
     color: red;
     margin-top: 10px;    
-
+}
+.no car-text
+{
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+.no-car-display{
+    display: flex;
+    margin-bottom: -50px;   
 }
 
-/* === index/adminhome === */
+
+/* === Index/adminhome === */
 .header-browse-cars{
     margin-top: 45px;
+    font-size: 50px;
 }
 
 .gallery {
@@ -430,12 +416,21 @@ h3{
     background-color: whitesmoke; 
 }
 
-.form-select-car{
+.form-select-car { 
     display: flex;
     justify-content: center;
 }
-
-.select-car{
+.label-manufacturer
+{
+    display: flex;
+    margin-left: -10px;
+}
+.label-decade
+{
+    display: flex;
+    margin-left: -2px;
+}
+.select-car {
     margin-left: 10px;
 }
 
@@ -505,7 +500,6 @@ h3{
 
 .info-car {
     height: 5%;
-    
 }
 
 .car-show-card {
@@ -532,13 +526,11 @@ h3{
 
 .car-show-info > li {
     padding: 5px;
-    
 }
 
 .div-avatar{
     color:whitesmoke;
     margin-right: 30px;
-    
 }
 
 /* === Add New Car === */
@@ -585,38 +577,3 @@ h3{
     margin-right: -12px;
 }
 
-/* .img-fade img {
-    position:absolute;
-    top:0;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-}
-
-@-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-@keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
-
-.lambo-EVO-back {
-    -webkit-animation-delay: -4s;
-   
-}
-.ford-mustang-back {
-    -webkit-animation-delay: -2s;
-    
-} */

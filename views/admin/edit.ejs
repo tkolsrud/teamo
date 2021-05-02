@@ -2,7 +2,6 @@
 
     <body>
         <%- include ("../partials/navbarPartial.ejs"); %>
-
             <h1>Edit Car Page</h1>
             <form action="/admin/<%= car._id %>?_method=PUT" method="POST">
                 <input type="text" name="manufacturer" placeholder="Make" value="<%=car.manufacturer%>" />
