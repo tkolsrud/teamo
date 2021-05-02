@@ -130,6 +130,14 @@ router.get('/settings', (req, res) => {
 });
 
 /* === Delete User Account Route === */
+// router.delete('/settings', (req, res) => {
+//     db.User.deleteOne(req.session.currentUser.id, async (err, deletedUser) => {
+//         if (err) return res.send(err);
+
+//         return await res.redirect('/');
+//     })
+// });
+
 
 
 module.exports = router;

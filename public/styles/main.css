@@ -50,7 +50,7 @@ h3 {
 .navbar {
     display: flex;
     background-color: rgb(28, 26, 26);
-    height: 125px;
+    height: 100px;
     border-bottom: 4px solid rgb(83, 82, 82);
     
 }
@@ -377,6 +377,9 @@ h3 {
 .header{
     margin-top: 45px;
     font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
 }
 
 .gallery {
@@ -440,6 +443,15 @@ input[type=text]{
     outline: none;
     border-radius: 5px;
     padding: 3px;
+}
+
+input[type=password]{
+    border: none;
+    outline: none;
+}
+input[type=email]{
+    border: none;
+    outline: none;
 }
 
 .nav-link:hover { 
@@ -709,4 +721,8 @@ input.btn{
     font-weight: 600;
     font-size: 20px;
     margin-top: -15px;
+}
+
+.carousel-item > img{
+    border-radius: 3px;
 }
