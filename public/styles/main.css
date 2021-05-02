@@ -589,6 +589,22 @@ h3{
     margin-right: -12px;
 }
 
+
+.aboutheader{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.article-about {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.article-about > p {
+    max-width: 60%;
+}
 /* .img-fade img {
     position:absolute;
     top:0;
