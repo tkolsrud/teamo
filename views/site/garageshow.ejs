@@ -19,11 +19,13 @@
                             <li>Year: <%=car.year%>
                             </li>
                             <li>
+
                                 <form action="/garage/<%=car._id%>?_method=PUT" method="POST">
                                     <input class="btn btn-removecar" type="submit" value="Remove From Garage">
                                 </form>
-
-
+                        </ul>
+                    </div>
+                </section>
             </main>
     </body>
 

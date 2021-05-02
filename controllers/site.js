@@ -76,7 +76,7 @@ router.put('/show/:id', function (req, res) {
 
         foundUser.garage.push(carId);
         foundUser.save();
-        return res.redirect('/index');
+        return res.redirect('/garage');
     });
 });
 
@@ -116,6 +116,21 @@ router.put('/garage/:id', (req, res) => {
         }
     });
 });
+
+/* === User Settings Route === */
+router.get('/settings', (req, res) => {
+    db.User.findById(req.session.currentUser.id, (err, foundUser) => {
+        if (err) {
+            console.log(err);
+            return res.send("Server Error");
+        } else {
+            const context = { user: foundUser };
+            return res.render('site/settings', context);
+        }
+    })
+});
+
+/* === Delete User Account Route === */
 
 
 module.exports = router;
