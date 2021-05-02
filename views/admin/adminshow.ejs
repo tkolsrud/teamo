@@ -1,6 +1,9 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
+
+        <h1>Admin Show page</h1>
+
         <%- include ("../partials/navbarPartial.ejs"); %>
 
             <main>
@@ -9,7 +12,6 @@
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
                         <ul class="car-show-info">
-
                             <li>Model: <%= car.model %>
                             </li>
                             <li>Manufacturer: <%= car.manufacturer %>
@@ -26,6 +28,7 @@
                                 <input class="btn btn-removecar btn-delete-car" type="submit"
                                     value="Remove From Database" />
                             </form>
+
                         </ul>
                     </div>
                 </section>

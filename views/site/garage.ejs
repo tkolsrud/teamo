@@ -7,7 +7,9 @@
             <h2 class="header-garage">Your Garage</h2>
             <section class="gallery">
                 <% if(!cars.length) {%>
-                    <p>Select By Make, Country, or Year!</p>
+                    <p class="no-car-text">Select By Make, Country, or Year!</p>
+                    <img class="no-car-display"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b8280a67086875.5b2f9fde700fd.gif">
                     <% } %>
                         <% cars.forEach(car=> { %>
                             <a class="card" href="/garage/<%=car._id%>">

@@ -3,8 +3,8 @@ const router = express.Router();
 const db = require('../models')
 
 // About route - Presentational X
-// Help route - Presentational 
-// Home route - Presentational
+// Help route - Presentational  X
+// Home route - Presentational X
 
 
 /* === About Route === */
@@ -18,7 +18,7 @@ router.get('/help', function (req, res) {
 });
 
 
-/***** Index Route *********/
+/* === Index Route === */
 
 router.get('/index', async (req, res) => {
     try {
@@ -38,7 +38,7 @@ router.get('/index', async (req, res) => {
     }
 });
 
-/***** Garage Route *********/
+/* === Garage Route === */
 router.get('/garage', function (req, res) {
     db.User.findById(req.session.currentUser.id)
         .populate('garage')
@@ -52,8 +52,7 @@ router.get('/garage', function (req, res) {
 });
 
 
-
-/***** Show Route *********/
+/* === Show Route === */
 router.get('/site/:id', function (req, res) {
     const id = req.params.id;
     db.Car.findById(id, function (err, foundCar) {
