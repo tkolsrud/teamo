@@ -1,10 +1,13 @@
 <%- include ("../partials/headerpartial.ejs"); %>
 
     <body>
+
         <h1>Admin Show page</h1>
+
         <%- include ("../partials/navbarPartial.ejs"); %>
-            <h2>Car info</h2>
+
             <main>
+                <h2>Car info</h2>
                 <section class="car-show-card">
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
@@ -17,14 +20,17 @@
                             </li>
                             <li>Year: <%=car.year%>
                             </li>
+
+                            <form action="/admin/<%=car._id%>/edit" method="Get">
+                                <input class="btn btn-dark btn-edit-car" type="submit" value="Edit Car" />
+                            </form>
+                            <form action="/admin/<%=car._id%>?_method=DELETE" method="POST">
+                                <input class="btn btn-removecar btn-delete-car" type="submit"
+                                    value="Remove From Database" />
+                            </form>
+
                         </ul>
                     </div>
-                </section>
-                <section>
-                    <a href="/admin/<%=car._id%>/edit">Edit Car</a>
-                    <form action="/admin/<%=car._id%>?_method=DELETE" method="POST">
-                        <input type="submit" value="Remove From Database" />
-                    </form>
                 </section>
             </main>
     </body>

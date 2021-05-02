@@ -4,12 +4,10 @@
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
                 <h3 class="header-browse-cars">Browse Cars</h3>
-                <div class="div-addnew">
-                    <a class="btn btn-dark a-btn-signup" href="/addnew" role="button">Add New Car</a>
-                </div>
+
                 <Section class="section-select-car">
                     <form class="form-select-car" action="" method="GET">
-                        <label for="car-select">Filter By Manufacturer:</label>
+                        <label class="label-dropdown" for="car-select">Filter By Manufacturer:</label>
 
                         <select class="select-car" name="manufacturer" id="" onchange="this.form.submit()">
                             <option value="">Choose A Manufacturer</option>
@@ -27,7 +25,7 @@
                         </select>
                     </form>
                     <form class="form-select-car" action="" method="GET">
-                        <label for="car-select">Filter By Country:</label>
+                        <label class="label-dropdown" for="car-select">Filter By Country:</label>
 
                         <select class="select-car" name="country" id="" onchange="this.form.submit()">
                             <option value="">Choose By Country</option>
@@ -39,7 +37,7 @@
                         </select>
                     </form>
                     <form class="form-select-car" action="" method="GET">
-                        <label for="car-select">Filter By Decade:</label>
+                        <label class="label-dropdown" for="car-select">Filter By Decade:</label>
 
                         <select class="select-car" name="year" id="" onchange="this.form.submit()">
                             <option value="">Choose A Decade:</option>
@@ -54,13 +52,16 @@
                         </select>
                     </form>
                 </Section>
+                <div class="div-addnew">
+                    <a class="btn btn-dark a-btn-signup" href="/addnew" role="button">Add New Car</a>
+                </div>
                 <section class="gallery">
                     <% if(!cars.length) {%>
                         <p>Select By Make, Country, or Year!</p>
                         <% } %>
                             <% cars.forEach(car=> { %>
 
-                                <a class="card" href="/site/<%=car._id%>">
+                                <a class="card" href="/admin/<%=car._id%>">
                                     <div class="card_manfufacturer">
                                         Make: <%= car.manufacturer%>
                                     </div>

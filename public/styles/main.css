@@ -18,7 +18,10 @@ h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-h2 {
+
+h2{
+    margin-top: 45px;
+
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -57,11 +60,13 @@ h3 {
     background-position: top;
 }
 
-.div-nav-username{
+.div-nav-username > a{
     color: whitesmoke;
     margin-right: 12px;
     margin-top: 19px;
+    text-decoration: none;
 }
+
 
 .input-logout {
     border: none;
@@ -119,7 +124,12 @@ h3 {
     margin: auto;
     width: 350px;
     padding: 10px;
-    margin-top: 25px;
+    margin-bottom: -35px;
+    
+}
+
+.subheader-faq{
+    margin-bottom: 25px;
 }
 
 /* === Login === */
@@ -257,17 +267,16 @@ h3 {
     margin-top: 45px;
 }
 
-
-{
-    display: flex;
-    justify-content: center;
-    max-height: 600px;
-}
-
 .div-addnew {
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
 }
+
+.header-garage{
+    margin-top: 45px;
+}
+
 .div-admin {
     width: 200px;
     padding: 10px;
@@ -280,7 +289,6 @@ h3 {
     background-color: rgb(209, 23, 23);
     color: whitesmoke;
 }
-
 /* === Register === */
 .form-register{
     display: flex;
@@ -440,10 +448,21 @@ h3 {
     transform: scale(1.01); 
 }
 
+input[type=submit]:hover {
+    transform: scale(1.01);
+}
+
 .nav-link:hover { 
     color: whitesmoke;
     transform: scale(1.01);
 }
+
+.btn:hover{
+    transform: scale(1.01);
+}
+
+
+
 
 .card:link {
     color: rgb(44, 41, 41);
@@ -474,6 +493,11 @@ h3 {
     color:#fdc500;
     text-decoration: none;
 }
+
+.div-nav-username > a:hover{
+     color:#fdc500;
+}
+
 .card:active {
     color: rgb(44, 41, 41);
     text-decoration: none;
@@ -487,7 +511,18 @@ h3 {
 .signinwelcomenav:hover {
     color:#fdc500;
     text-decoration: none;
+    transform: scale(1.01);
 }
+
+.btn-removecar{
+    background-color: rgb(209, 23, 23);
+    color: whitesmoke;
+}
+
+.btn-removecar:hover{
+    color:whitesmoke;
+}
+
 .image-car { 
     object-fit:cover;
     display: flex;
@@ -577,3 +612,55 @@ h3 {
     margin-right: -12px;
 }
 
+.aboutheader{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.article-about {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.article-about > p {
+    max-width: 60%;
+}
+
+.label-dropdown{
+    font-weight: bold;
+}
+
+select {
+    outline: none;
+}
+
+.btn-edit-car{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 167px;
+}
+
+.div-user_info{
+    display:flex;
+    justify-content: center;
+}
+
+.p-user-info{
+    font-weight: bold;
+}
+
+.span-needs-space{
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.user-icon{
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.btn-delete-account{
+    margin-top: 35px;
+}
