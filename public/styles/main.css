@@ -60,11 +60,13 @@ h3{
     background-position: top;
 }
 
-.div-nav-username{
+.div-nav-username > a{
     color: whitesmoke;
     margin-right: 12px;
     margin-top: 19px;
+    text-decoration: none;
 }
+
 
 .input-logout {
     border: none;
@@ -495,6 +497,11 @@ input[type=submit]:hover {
     color:#fdc500;
     text-decoration: none;
 }
+
+.div-nav-username > a:hover{
+     color:#fdc500;
+}
+
 .card:active {
     color: rgb(44, 41, 41);
     text-decoration: none;
