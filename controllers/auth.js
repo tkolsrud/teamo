@@ -46,14 +46,10 @@ router.post('/login', async function (req, res) {
 
         if (!foundUser) return res.redirect('/register'); // one line if statement that checks for a user and if none -> register
 
-        const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db)
+        const match = await bcrypt.compare(req.body.password, foundUser.password); // bcrypt.compare(string password from user vs. hashed password from db
 
-        if (!match) return res.redirect('auth/faillogin');
-
-
-
-
-
+        // Fail login
+        if (!match) return res.redirect('/faillogin');
 
 
 
@@ -75,6 +71,7 @@ router.post('/login', async function (req, res) {
         console.log(err);
         res.send(err);
     }
+
 });
 
 /***** About Route *********/
