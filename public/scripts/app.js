@@ -1,11 +1,7 @@
 console.log('sanity check');
 
-function checkPasswordMatch() {
-    let password = $("#password").val();
-    let confirmPassword = $("#retypepassword").val();
-    if (password != confirmPassword)
-        $("#passwordcheck").html("Passwords does not match!");
-    else
-        $("#passwordcheck").html("Passwords match.");
-}
+const slideShow = function () {
+    $('#welcome-images').carousel({ interval: 5000 });
+};
 
+slideShow();

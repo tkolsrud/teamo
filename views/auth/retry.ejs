@@ -3,7 +3,7 @@
     <body>
         <%- include ("../partials/welcomenav.ejs"); %>
             <h2 class="header-login">Sign-in</h2>
-            <span id="span-invalid-password" class="span-invalid-password">Password Invalid</span>
+
 
             <!--Username and Password-->
             <form class="form-login" action="/login" method="POST">
@@ -16,7 +16,8 @@
                 <div class="div-login">
                     <label for="password">Password:</label>
                     <input type="password" class="input-password" placeholder="Password" name="password">
-                </div>
+                </div><span id="span-invalid-password" class="span-invalid-password">The username or password is
+                    incorrect</span>
                 <input class="btn btn-dark input-login" type="submit" value="Submit">
             </form>
     </body>

@@ -102,13 +102,21 @@ h3{
     display: flex;
 }
 
+.carousel {
+    max-height: 375px;
+    max-width: 500px;
+    height: auto;
+}
+
+
+
 .a-btn-signup {
     margin: auto;
     width: 350px;
     padding: 10px;
     margin-top: 25px;
 }
-.audi-r8-back {
+/* .audi-r8-back {
     position: relative;
     right: -60px;
     margin-bottom: 20px;
@@ -137,7 +145,7 @@ h3{
     right: -60px;
     width: 300px;
     height: 200px;
-}
+} */
 /* === Login === */
 .signin {
     position: relative;
@@ -163,6 +171,7 @@ h3{
     top: 0px;
     left: -1px;
 }
+
 
 
 .submitbutton {
@@ -327,6 +336,13 @@ h3{
 .input-password{
     padding:3px;
     margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.retypepassword{
+    padding: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .header-registration{
@@ -345,6 +361,10 @@ h3{
     position: relative;
     top: 80px;
     right: -35px;
+}
+
+.passwordcheck{
+    color: red;    
 }
 /* === Login === */
 .form-login {
@@ -366,11 +386,22 @@ h3{
 }
 
 .input-login{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
+.span-invalid-password{
+    /* justify-self: center; */
+    align-self: flex-end;
+    color: red;
+    margin-top: 10px;    
+
+}
 
 /* === index/adminhome === */
+.header-browse-cars{
+    margin-top: 45px;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -398,6 +429,17 @@ h3{
     border: 2px solid rgb(192, 190, 190); 
     background-color: whitesmoke; 
 }
+
+.form-select-car{
+    display: flex;
+    justify-content: center;
+}
+
+.select-car{
+    margin-left: 10px;
+}
+
+
 .card:hover { 
     color: rgb(44, 41, 41);
     transform: scale(1.01); 
