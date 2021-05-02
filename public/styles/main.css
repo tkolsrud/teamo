@@ -8,10 +8,11 @@ body {
     /* display: block; */
     /* text-align: center; */
     height: 100vh;
-    font-family: 'Mukta Vaani', sans-serif;
     background-color: #ebeced;
     /*font-family:'Asap Condensed', sans-serif;*/
     font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
 }
 h1 {
     text-align: left;
@@ -47,6 +48,7 @@ h3 {
 
 /* === NavBar === */
 .navbar {
+    display: flex;
     background-color: rgb(28, 26, 26);
     height: 125px;
     border-bottom: 4px solid rgb(83, 82, 82);
@@ -87,25 +89,14 @@ h3 {
     text-decoration: none;
     color: whitesmoke;
 }
-.signup {
-    position: relative;
-    top: 20px;
-    right: -5px;
-    color: white;
-    background-color: blue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+
 
 .section-welcome{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.div-btn-signup{
-    width: 100vw;;
-    display: flex;
+    margin-top: 35px;
 }
 
 .carousel {
@@ -116,22 +107,17 @@ h3 {
 
 .carousel-item
 {
-    max-width: 500px;
+    max-width: 800px;
 }
 
-.a-btn-signup {
-
-    margin: auto;
-    width: 350px;
-    padding: 10px;
-    margin-bottom: -35px;
-    
-}
 
 .subheader-faq{
     margin-bottom: 25px;
 }
 
+.navbar-brand-site{
+    margin-top: 40px;
+}
 /* === Login === */
 .signin {
     position: relative;
@@ -203,12 +189,12 @@ h3 {
 }
 
 .navlinks_left {
-    display: flex;
+    /* display: flex; */
     width: 400px;
     color: whitesmoke;
 }
 .navbar-text {
-    position: relative;
+    /* position: relative; */
     right: -670px;
     color: whitesmoke;
 }
@@ -219,17 +205,14 @@ h3 {
      */
 
 .navbar-brand {
-    display: flex;
+    align-self: center;
     font-family: 'Damion', cursive;
     color: whitesmoke;
     font-size: 50px;
+    font-weight: 400;
     margin-top: -10px; 
 }
 
-.navlinks_left {
-    display: flex;
-    width: 400px;
- }
 
 .section-select-car {
     margin:auto;
@@ -391,7 +374,7 @@ h3 {
 
 
 /* === Index/adminhome === */
-.header-browse-cars{
+.header{
     margin-top: 45px;
     font-size: 50px;
 }
@@ -450,6 +433,13 @@ h3 {
 
 input[type=submit]:hover {
     transform: scale(1.01);
+}
+
+input[type=text]{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 .nav-link:hover { 
@@ -603,8 +593,8 @@ input[type=submit]:hover {
 
 .div-addnew{
     align-self: flex-end;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 10px;
+    margin-top: 2px;
 }
 
 .input-addnew{
@@ -649,10 +639,11 @@ select {
 
 .p-user-info{
     font-weight: bold;
+    
 }
 
 .span-needs-space{
-    margin-left: 15px;
+    margin-left: 2px;
     font-weight: normal;
 }
 
@@ -663,4 +654,59 @@ select {
 
 .btn-delete-account{
     margin-top: 35px;
+}
+.div-btn-signup{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.a-btn-signup {
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.form-select-car-manufacturer{
+    margin-left: -9px;
+}
+
+.p-addcars{
+    font-size: 21px;
+
+}
+
+.p-about{
+    margin-top: 25px;
+}
+
+.div-nav-welcome{
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+.div-user_info-username{
+    margin-left: -80px;
+}
+
+.section-form-addnew{
+    margin-top: 25px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+a.btn{
+    font-weight: 600;
+}
+
+input.btn{
+    font-weight: 600;
+}
+
+.input-logout{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -15px;
 }

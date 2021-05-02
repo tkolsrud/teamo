@@ -4,7 +4,7 @@
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
                 <section class="section-header-addnew">
-                    <h1 class="header-addnew">Add New Car</h1>
+                    <h2 class="header">Add New Car</h2>
                 </section>
 
                 <section class="section-form-addnew">
@@ -24,6 +24,10 @@
                         <div class="div-addnew">
                             <label for="year">Year:</label>
                             <input type="text" name="year" placeholder="Year" />
+                        </div>
+                        <div class="div-addnew">
+                            <label for="img">Image:</label>
+                            <input type="text" name="img" placeholder="Image URL" />
                         </div>
                         <input class="btn btn-dark input-addnew" type="submit" value="Add Car">
                     </form>
