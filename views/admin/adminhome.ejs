@@ -30,10 +30,9 @@
                         </select>
                     </form>
                     <form class="form-select-car" action="" method="GET">
-                        <label for="car-select">Filter By Country:</label>
+                        <label class="label-dropdown" for="car-select">Filter By Country:</label>
 
-                        <select class="label-dropdown" class="select-car" name="country" id=""
-                            onchange="this.form.submit()">
+                        <select class="select-car" name="country" id="" onchange="this.form.submit()">
                             <option value="">Choose By Country</option>
                             <option value="USA">USA</option>
                             <option value="Italy">Italy</option>
@@ -43,10 +42,9 @@
                         </select>
                     </form>
                     <form class="form-select-car" action="" method="GET">
-                        <label for="car-select">Filter By Decade:</label>
+                        <label class="label-dropdown" for="car-select">Filter By Decade:</label>
 
-                        <select class="label-dropdown" class="select-car" name="year" id=""
-                            onchange="this.form.submit()">
+                        <select class="select-car" name="year" id="" onchange="this.form.submit()">
                             <option value="">Choose A Decade:</option>
                             <option value="195">1950s</option>
                             <option value="196">1960s</option>
@@ -68,7 +66,7 @@
                         <% } %>
                             <% cars.forEach(car=> { %>
 
-                                <a class="card" href="/site/<%=car._id%>">
+                                <a class="card" href="/admin/<%=car._id%>">
                                     <div class="card_manfufacturer">
                                         Make: <%= car.manufacturer%>
                                     </div>

@@ -20,6 +20,7 @@ h1
 }
 
 h2{
+    margin-top: 45px;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
@@ -309,10 +310,6 @@ h3{
 
 
 
-.btn-removecar{
-    background-color: rgb(209, 23, 23);
-    color: whitesmoke;
-}
 
 /* === Register === */
 .form-register{
@@ -453,10 +450,21 @@ h3{
     transform: scale(1.01); 
 }
 
+input[type=submit]:hover {
+    transform: scale(1.01);
+}
+
 .nav-link:hover { 
     color: whitesmoke;
     transform: scale(1.01);
 }
+
+.btn:hover{
+    transform: scale(1.01);
+}
+
+
+
 
 .card:link {
     color: rgb(44, 41, 41);
@@ -500,7 +508,18 @@ h3{
 .signinwelcomenav:hover {
     color:#fdc500;
     text-decoration: none;
+    transform: scale(1.01);
 }
+
+.btn-removecar{
+    background-color: rgb(209, 23, 23);
+    color: whitesmoke;
+}
+
+.btn-removecar:hover{
+    color:whitesmoke;
+}
+
 .image-car { 
     object-fit:cover;
     display: flex;
@@ -622,3 +641,10 @@ h3{
 select {
     outline: none;
 }
+
+.btn-edit-car{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 167px;
+}
+
