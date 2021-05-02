@@ -131,3 +131,6 @@ router.get('/settings', (req, res) => {
 });
 
 /* === Delete User Account Route === */
+
+
+module.exports = router;
