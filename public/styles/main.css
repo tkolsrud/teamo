@@ -114,6 +114,7 @@ h3{
     margin: auto;
     width: 350px;
     padding: 10px;
+    margin-bottom: -35px;
     
 }
 /* .audi-r8-back {
@@ -285,9 +286,12 @@ h3{
 .div-addnew {
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
-
+.header-garage{
+    margin-top: 45px;
+}
 
 
 .div-admin {
