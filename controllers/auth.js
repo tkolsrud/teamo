@@ -56,9 +56,6 @@ router.post('/login', async function (req, res) {
         // Failed login
         if (!match) return res.redirect('/faillogin');
 
-        // // if not match send error:
-        // if (!match) return res.send('password invalid');
-
         // if there is a match create session(cookie) and redirect home
         req.session.currentUser = { //creates the cookie tied to the current user
             id: foundUser._id,
@@ -80,6 +77,7 @@ router.post('/login', async function (req, res) {
 router.get('/aboutauth', function (req, res) {
     res.render('auth/aboutauth');
 });
+
 /***** Help Route *********/
 
 router.get('/helpauth', function (req, res) {

@@ -3,9 +3,7 @@
     <body>
         <%- include ("../partials/welcomenav.ejs"); %>
             <main>
-
                 <h2 class="header">Sign-in</h2>
-
                 <!-- Retry Login Form -->
                 <form class="form-login" action="/login" method="POST">
 
@@ -13,16 +11,13 @@
                         <label for="email">Email:</label>
                         <input type="email" class="input-email" placeholder="Email" name="email">
                     </div>
-
                     <div class="div-login">
                         <label for="password">Password:</label>
                         <input type="password" class="input-password" placeholder="Password" name="password">
                     </div><span id="span-invalid-password" class="span-invalid-password">The username or password is
                         incorrect</span>
                     <input class="btn btn-dark input-login" type="submit" value="Submit">
-
                 </form>
-
             </main>
     </body>
 
