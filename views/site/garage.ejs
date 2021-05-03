@@ -3,17 +3,13 @@
     <body>
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
-
                 <h2 class="header">Your Garage</h2>
-
                 <!-- Garage Gallery -->
                 <section class="gallery">
-
-                    <!-- Empty Garage GIF -->
+                    <!-- Empty Garage -->
                     <% if(!cars.length) {%>
                         <p class="p-addcars">Add cars to your garage!</p>
                         <% } %>
-
                             <!-- Garage Gallery Cards -->
                             <% cars.forEach(car=> { %>
                                 <a class="card" href="/garage/<%=car._id%>">
@@ -34,7 +30,6 @@
                                     </div>
                                 </a>
                                 <% }) %>
-
                 </section>
             </main>
     </body>
