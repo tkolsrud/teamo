@@ -1,13 +1,708 @@
-h1
-{
-text-align: left;
+*{
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
 }
+
+body {
+    height: 100vh;
+    background-color: #ebeced;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
+}
+
+h1{
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 
 h2{
-text-align: center;
+    margin-top: 45px;
+
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-body
+main{
+    border-top: 4px solid rgb(96, 95, 95);
+}
+
+
+ul{
+    display: inline-flex;
+
+} 
+
+li{
+    list-style-type: none;
+}
+
+h3{ 
+    display: flex;
+    justify-content: center;   
+}
+
+/* === NavBar === */
+.navbar {
+    display: flex;
+    background-color: rgb(28, 26, 26);
+    height: 100px;
+    border-bottom: 4px solid rgb(96, 95, 95);
+    
+}
+
+.banner {
+    height: 175px;
+    width: 100vw;
+    object-fit: cover;
+    background-position: top;
+}
+
+.div-nav-username > a{
+    color: whitesmoke;
+    margin-right: 12px;
+    margin-top: 19px;
+    text-decoration: none;
+}
+
+.input-logout {
+    border: none;
+    margin-top: -12px;
+}
+
+/* === Welcome Page === */
+.welcome-title{
+    padding: 20px;
+    margin-top: 50px;
+}
+.welcome-images{
+    max-width: 100px;
+}
+
+.signinwelcomenav {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.section-welcome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.carousel {
+    max-height: 900px;
+    max-width: 500px;
+    height: auto;
+}
+
+.carousel-item{
+    max-width: 800px;
+}
+
+
+.subheader-faq{
+    margin-bottom: 25px;
+}
+
+
+/* === Login === */
+.signin {
+    position: relative;
+    top: -300px;
+    right: -500px;
+    color: white;
+    background-color: blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.username {
+    position: relative;
+    top: 20px;
+    right: 0px;
+}
+
+.reenter {
+    position: relative;
+    top: -20px;
+}
+.password {
+    position: relative;
+    top: 0px;
+    left: -1px;
+}
+
+.submitbutton {
+    position: relative;
+    left: -90px;
+    top: 50px;
+}
+
+.email {
+    position: relative;
+    left: 0px;
+    top: 40px;
+}
+
+.emailtext {
+    position: relative;
+    left: -146px;
+    top: 80px;
+}
+
+.signout {
+    position: relative;
+    top: -90px;
+    right: -500px;
+    color: white;
+    background-color: blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.welcome {
+    position: relative;
+    left: -200px;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.navlinks_left {
+    width: 400px;
+    color: whitesmoke;
+}
+.navbar-text {
+    right: -670px;
+    color: whitesmoke;
+}
+
+.navbar-brand {
+    align-self: center;
+    font-family: 'Damion', cursive;
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px; 
+}
+
+.section-select-car {
+    margin:auto;
+    display: block;
+    width: 435px;
+    padding: 15px;      
+}
+
+.form-select-car {
+    padding: 5px; 
+}
+
+.select-car {
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.input-logout {
+    display: grid;
+    margin-right: 20px;
+    margin-bottom: -21px;
+    color: whitesmoke;
+    background-color: rgb(28, 26, 26);
+    
+}
+
+.input-logout:hover {
+    color:#fdc500;
+    text-decoration: none;
+}
+
+
+.div-addnew {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+
+.div-admin {
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.checkbox-admin {
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
+.btn-removecar{
+    background-color: rgb(209, 23, 23);
+    color: whitesmoke;
+}
+/* === Register === */
+.form-register{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.div-register{
+    align-self: flex-end;
+}
+
+.checkbox-admin{
+    margin-right: -50px;
+    margin-bottom: -50px;
+}
+
+.input-email{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-username{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input-password{
+    padding:3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.retypepassword{
+    padding: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.p-register_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.reenter{
+    position: relative;
+    top: 80px;
+    right: -35px;
+}
+
+.passwordcheck{
+    color: red;    
+}
+
+/* === Login === */
+.form-login {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.div-login{
+    align-self: flex-end;
+}
+
+.input-login{
+    margin-top: 25px;
+}
+
+.span-invalid-password{
+   
+    align-self: flex-end;
+    color: red;
+    margin-top: 10px;    
+}
+.no car-text
 {
-    background-color: lightskyblue;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/* === Index/adminhome === */
+.header{
+    margin-top: 45px;
+    margin-bottom: 35px;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;    
+    flex: 1 0 30%;
+    max-width: 400px;
+    min-width: 370px;
+    max-height: 600px;
+    height: auto;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(44, 41, 41);
+    transition: all .1s ease-in-out; 
+    border: 2px solid rgb(192, 190, 190); 
+    background-color: whitesmoke; 
+}
+
+.form-select-car { 
+    display: flex;
+    justify-content: center;
+}
+.label-manufacturer
+{
+    display: flex;
+    margin-left: -10px;
+}
+.label-decade
+{
+    display: flex;
+    margin-left: -2px;
+}
+.select-car {
+    margin-left: 10px;
+}
+
+.card:hover { 
+    color: rgb(44, 41, 41);
+    transform: scale(1.01); 
+}
+
+input[type=submit]:hover {
+    transform: scale(1.01);
+}
+
+input[type=text]{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+input[type=password]{
+    border: none;
+    outline: none;
+}
+input[type=email]{
+    border: none;
+    outline: none;
+}
+
+.nav-link:hover { 
+    color: whitesmoke;
+    transform: scale(1.01);
+}
+
+.btn:hover{
+    transform: scale(1.01);
+}
+
+.card:link {
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
+
+.nav-link:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.card:visited {
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.card:hover {
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color:#fdc500;
+    text-decoration: none;
+}
+
+.div-nav-username > a:hover{
+     color:#fdc500;
+}
+
+.card:active {
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
+
+.nav-link:active {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.signinwelcomenav:hover {
+    color:#fdc500;
+    text-decoration: none;
+    transform: scale(1.01);
+}
+
+.btn-removecar{
+    background-color: rgb(209, 23, 23);
+    color: whitesmoke;
+}
+
+.btn-removecar:hover{
+    color:whitesmoke;
+}
+
+.image-car { 
+    object-fit:cover;
+    display: flex;
+    max-height: 250px;
+    height: 55%;
+    max-width: 370px;
+    min-width: 370px;
+    padding-top: 10px;
+}
+
+.info-car {
+    height: 5%;
+}
+
+.car-show-card {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.car-show-img {
+    max-width: 875px;
+    max-height: 584px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car-show-info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 200px;
+}
+
+.car-show-info > li {
+    padding: 5px;
+}
+
+.div-avatar{
+    color:whitesmoke;
+    margin-right: 30px;
+}
+
+/* === Add New Car === */
+.section-header-addnew{
+    display:flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.header-addnew{
+    margin-top: 45px;
+}
+
+.form-addnew{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form-addnew > input {
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.div-addnew{
+    align-self: flex-end;
+    gap: 10px;
+    margin-top: 2px;
+}
+
+.input-addnew{
+    align-self: center;
+    margin-right: -12px;
+}
+
+.aboutheader{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.article-about {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.article-about > p {
+    max-width: 60%;
+}
+
+.label-dropdown{
+    font-weight: bold;
+}
+
+select {
+    outline: none;
+}
+
+.btn-edit-car{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 167px;
+}
+
+.div-user_info{
+    display:flex;
+    justify-content: center;
+}
+
+.p-user-info{
+    font-weight: bold;
+}
+
+.span-needs-space{
+    margin-left: 2px;
+    font-weight: normal;
+}
+
+.user-icon{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.btn-delete-account{
+    margin-top: 35px;
+}
+
+
+.form-select-car-manufacturer{
+    margin-left: -9px;
+}
+
+.p-addcars{
+    font-size: 21px;
+}
+.navbar-brand-about
+{
+    display: flex;
+    margin-top: 50px;
+    color: rgb(44, 41, 41);
+}
+.about-textc {
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.p-about {
+    margin-top: 20px;
+}
+
+.div-nav-welcome{
+    color: whitesmoke;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+.div-user_info-username{
+    margin-left: -80px;
+}
+
+.section-form-addnew{
+    margin-top: 25px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+a.btn{
+    font-weight: 600;
+    margin-right: -50px;
+}
+
+input.btn{
+    font-weight: 600;
+}
+
+.input-logout{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.carousel-item > img{
+    border-radius: 3px;
+}
+
+.div-user_info {
+    font-size: 22px;
+}
+
+.div-user_info-username{
+    margin-right: -40px;
+}
+
+.nav-item{
+    color: whitesmoke;
+    margin-right: 15px;
+}
+
+.navbar-brand-site{
+    margin-top: 7px;
+}
+
+
+/* == sign up button welcome page === */
+.div-btn-signup{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.a-btn-signup {
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
 }

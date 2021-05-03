@@ -9,6 +9,7 @@
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
                         <ul class="car-show-info">
+
                             <li>Model: <%= car.model %>
                             </li>
                             <li>Manufacturer: <%= car.manufacturer %>
@@ -18,17 +19,13 @@
                             <li>Year: <%=car.year%>
                             </li>
                             <li>
-                                <!-- Add to Garage Button -->
-                                <form action="/show/<%=car._id%>?_method=PUT" method="POST">
-                                    <input class="btn btn-dark" type="submit" value="Add To Garage">
+                                <!-- Remove From Garage Button -->
+                                <form action="/garage/<%=car._id%>?_method=PUT" method="POST">
+                                    <input class="btn btn-removecar" type="submit" value="Remove From Garage">
                                 </form>
-                            </li>
-
                         </ul>
                     </div>
-
                 </section>
-
             </main>
     </body>
 

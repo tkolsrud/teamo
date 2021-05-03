@@ -1,0 +1,46 @@
+<!-- Search By Decade -->
+
+<form class="form-select-car" action="" method="GET">
+
+    <label class="label-dropdown" for="car-select">Filter By Decade:</label>
+
+
+    <select class="select-car" name="year" id="" onchange="this.form.submit()">
+        <option value="">Choose A Decade:</option>
+        <option value="195">1950s</option>
+        <option value="196">1960s</option>
+        <option value="197">1970s</option>
+        <option value="198">1980s</option>
+        <option value="199">1990s</option>
+        <option value="200">2000s</option>
+        <option value="201">2010s</option>
+        <option value="202">2020s</option>
+    </select>
+</form>
+
+<!-- Add New Car Form -->
+<section class="section-form-addnew">
+    <form class="form-addnew" action="/addnew" method="Post">
+        <div class="div-addnew">
+            <label for="manufacturer">Make:</label>
+            <input type="text" name="manufacturer" placeholder="Make" />
+        </div>
+        <div class="div-addnew">
+            <label for="country">Country:</label>
+            <input type="text" name="country" placeholder="Country" />
+        </div>
+        <div class="div-addnew">
+            <label for="model">Model:</label>
+            <input type="text" name="model" placeholder="Model" />
+        </div>
+        <div class="div-addnew">
+            <label for="year">Year:</label>
+            <input type="text" name="year" placeholder="Year" />
+        </div>
+        <div class="div-addnew">
+            <label for="img">Image:</label>
+            <input type="text" name="img" placeholder="Image URL" />
+        </div>
+        <input class="btn btn-dark input-addnew" type="submit" value="Add Car">
+    </form>
+</section>

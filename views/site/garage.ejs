@@ -1,0 +1,37 @@
+<%- include ("../partials/headerpartial.ejs"); %>
+
+    <body>
+        <%- include ("../partials/navbarPartial.ejs"); %>
+            <main>
+                <h2 class="header">Your Garage</h2>
+                <!-- Garage Gallery -->
+                <section class="gallery">
+                    <!-- Empty Garage -->
+                    <% if(!cars.length) {%>
+                        <p class="p-addcars">Add cars to your garage!</p>
+                        <% } %>
+                            <!-- Garage Gallery Cards -->
+                            <% cars.forEach(car=> { %>
+                                <a class="card" href="/garage/<%=car._id%>">
+                                    <div class="card_manfufacturer">
+                                        Make: <%= car.manufacturer%>
+                                    </div>
+                                    <div class="card_model">
+                                        Model: <%= car.model%>
+                                    </div>
+                                    <div class="card_year">
+                                        Year: <%= car.year%>
+                                    </div>
+                                    <div class="card_country">
+                                        Country of Origin: <%= car.country%>
+                                    </div>
+                                    <div>
+                                        <img class="image-car" src="<%= car.img %>" alt="">
+                                    </div>
+                                </a>
+                                <% }) %>
+                </section>
+            </main>
+    </body>
+
+    </html>
