@@ -1,6 +1,6 @@
 
 
-// Remove Car From Garage Route
+/* Remove Car From Garage Route */
 
 router.put('/garage/:id', (req, res) => {
     const carId = req.params.id;
