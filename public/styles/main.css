@@ -672,6 +672,7 @@ s
 
 a.btn{
     font-weight: 600;
+    margin-right: -50px;
 }
 
 input.btn{
