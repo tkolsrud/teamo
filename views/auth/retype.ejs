@@ -3,9 +3,7 @@
     <body>
         <%- include ("../partials/welcomenav.ejs"); %>
             <main>
-
                 <h2 class="header">Registration</h2>
-
                 <!-- Registration Form -->
                 <form class="form-register" action="/register" method="POST">
                     <div class="div-register">
@@ -29,14 +27,11 @@
                     <div class="div-register">
                         <span class="passwordcheck">Passwords do not match</span>
                     </div>
-
                     <div class="div-admin">
                         <label for="admin">Administrator Priveleges</label>
                         <input class="checkbox-admin" type="checkbox" name="admin" />
                     </div>
-
                     <input class="btn btn-dark" type="submit" value="Submit">
                 </form>
-
             </main>
     </body>

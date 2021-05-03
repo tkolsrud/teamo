@@ -17,3 +17,30 @@
         <option value="202">2020s</option>
     </select>
 </form>
+
+<!-- Add New Car Form -->
+<section class="section-form-addnew">
+    <form class="form-addnew" action="/addnew" method="Post">
+        <div class="div-addnew">
+            <label for="manufacturer">Make:</label>
+            <input type="text" name="manufacturer" placeholder="Make" />
+        </div>
+        <div class="div-addnew">
+            <label for="country">Country:</label>
+            <input type="text" name="country" placeholder="Country" />
+        </div>
+        <div class="div-addnew">
+            <label for="model">Model:</label>
+            <input type="text" name="model" placeholder="Model" />
+        </div>
+        <div class="div-addnew">
+            <label for="year">Year:</label>
+            <input type="text" name="year" placeholder="Year" />
+        </div>
+        <div class="div-addnew">
+            <label for="img">Image:</label>
+            <input type="text" name="img" placeholder="Image URL" />
+        </div>
+        <input class="btn btn-dark input-addnew" type="submit" value="Add Car">
+    </form>
+</section>

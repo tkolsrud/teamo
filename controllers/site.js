@@ -2,11 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models')
 
-// About route - Presentational X
-// Help route - Presentational  X
-// Home route - Presentational X
-
-
 /* === About Route === */
 router.get('/about', function (req, res) {
     res.render('site/about');
@@ -128,16 +123,6 @@ router.get('/settings', (req, res) => {
         }
     })
 });
-
-/* === Delete User Account Route === */
-// router.delete('/settings', (req, res) => {
-//     db.User.deleteOne(req.session.currentUser.id, async (err, deletedUser) => {
-//         if (err) return res.send(err);
-
-//         return await res.redirect('/');
-//     })
-// });
-
 
 
 module.exports = router;

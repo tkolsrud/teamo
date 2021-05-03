@@ -3,16 +3,12 @@
     <body>
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
-
                 <h2 class="header">Car Info</h2>
-
                 <!-- Car Info -->
                 <section class="car-show-card">
-
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
                         <ul class="car-show-info">
-
                             <li>Model: <%= car.model %>
                             </li>
                             <li>Manufacturer: <%= car.manufacturer %>
@@ -22,7 +18,6 @@
                             <li>Year: <%=car.year%>
                             </li>
                             <li>
-
                                 <!-- Add to Garage Button -->
                                 <form action="/show/<%=car._id%>?_method=PUT" method="POST">
                                     <input class="btn btn-dark" type="submit" value="Add To Garage">
