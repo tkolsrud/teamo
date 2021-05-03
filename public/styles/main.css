@@ -109,9 +109,7 @@ h3{
     margin-bottom: 25px;
 }
 
-.navbar-brand-site{
-    margin-top: 40px;
-}
+
 /* === Login === */
 .signin {
     position: relative;
@@ -698,4 +696,13 @@ input.btn{
 
 .div-user_info-username{
     margin-right: -40px;
+}
+
+.nav-item{
+    color: whitesmoke;
+    margin-right: 15px;
+}
+
+.navbar-brand-site{
+    margin-top: 7px;
 }
