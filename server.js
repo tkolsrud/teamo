@@ -29,7 +29,7 @@ app.use(express.static(`${__dirname}/public`));
 // // setup session middleware
 app.use(session({
     store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
-    secret: "super secret waffles",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUnitialized: false,
     cookie: {
