@@ -3,8 +3,10 @@
     <body>
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
+
                 <h2 class="header">Car Info</h2>
 
+                <!-- Car Info -->
                 <section class="car-show-card">
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
@@ -20,14 +22,16 @@
                             </li>
                             <li>
 
+                                <!-- Remove From Garage Button -->
                                 <form action="/garage/<%=car._id%>?_method=PUT" method="POST">
                                     <input class="btn btn-removecar" type="submit" value="Remove From Garage">
                                 </form>
 
-
                         </ul>
                     </div>
+
                 </section>
+
             </main>
     </body>
 

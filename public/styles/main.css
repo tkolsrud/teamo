@@ -50,7 +50,7 @@ h3 {
 .navbar {
     display: flex;
     background-color: rgb(28, 26, 26);
-    height: 125px;
+    height: 100px;
     border-bottom: 4px solid rgb(83, 82, 82);
     
 }
@@ -162,10 +162,6 @@ h3 {
     top: 80px;
 }
 
-.aboutheader {
-    text-align: center;
-}
-
 .signout {
     position: relative;
     top: -90px;
@@ -179,10 +175,7 @@ h3 {
     left: -200px;
 }
 
-.matchingvehichlesheader {
-    position: relative;
-    top: -60px;
-}
+
 
 .nav-link {
     color: whitesmoke;
@@ -198,11 +191,7 @@ h3 {
     right: -670px;
     color: whitesmoke;
 }
- /* @font-face {
- font-family: 'Damion', cursive;
-    src: url(https://fonts.googleapis.com/css2?family=Damion&display=swap);
-}
-     */
+
 
 .navbar-brand {
     align-self: center;
@@ -246,9 +235,6 @@ h3 {
     text-decoration: none;
 }
 
-.header-show {
-    margin-top: 45px;
-}
 
 .div-addnew {
     display: flex;
@@ -256,9 +242,6 @@ h3 {
     margin-bottom: 35px;
 }
 
-.header-garage{
-    margin-top: 45px;
-}
 
 .div-admin {
     width: 200px;
@@ -312,10 +295,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-.header-registration{
-    margin-top: 40px;
-    padding: 10px;
-}
+
 
 .p-register_content{
     display: flex;
@@ -342,11 +322,7 @@ h3 {
     align-content: center;
 }
 
-.header-login{
-    margin-top: 40px;
-    padding: 10px;
-    margin-bottom: 35px;
-}
+
 
 .div-login{
     align-self: flex-end;
@@ -376,7 +352,11 @@ h3 {
 /* === Index/adminhome === */
 .header{
     margin-top: 45px;
+    margin-bottom: 35px;
     font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
 }
 
 .gallery {
@@ -440,6 +420,15 @@ input[type=text]{
     outline: none;
     border-radius: 5px;
     padding: 3px;
+}
+
+input[type=password]{
+    border: none;
+    outline: none;
+}
+input[type=email]{
+    border: none;
+    outline: none;
 }
 
 .nav-link:hover { 
@@ -718,4 +707,8 @@ input.btn{
     font-weight: 600;
     font-size: 20px;
     margin-top: -15px;
+}
+
+.carousel-item > img{
+    border-radius: 3px;
 }

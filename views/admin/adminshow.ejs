@@ -2,13 +2,14 @@
 
     <body>
 
-
-
         <%- include ("../partials/navbarPartial.ejs"); %>
-
             <main>
+
                 <h2 class="header">Car info</h2>
+
+                <!-- Car Info -->
                 <section class="car-show-card">
+
                     <img class="car-show-img" src="<%=car.img %>" alt="">
                     <div>
                         <ul class="car-show-info">
@@ -21,9 +22,13 @@
                             <li>Year: <%=car.year%>
                             </li>
 
+
+                            <!-- Edit Car Button -->
                             <form action="/admin/<%=car._id%>/edit" method="Get">
                                 <input class="btn btn-dark btn-edit-car" type="submit" value="Edit Car" />
                             </form>
+
+                            <!-- Delete Car Button -->
                             <form action="/admin/<%=car._id%>?_method=DELETE" method="POST">
                                 <input class="btn btn-removecar btn-delete-car" type="submit"
                                     value="Remove From Database" />
@@ -31,7 +36,9 @@
 
                         </ul>
                     </div>
+
                 </section>
+
             </main>
     </body>
 
