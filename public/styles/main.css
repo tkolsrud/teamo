@@ -248,7 +248,13 @@ h3 {
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-  
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.checkbox-admin {
+    margin-left: 12px;
+    margin-top: 6px;
 }
 
 .btn-removecar{
@@ -283,7 +289,7 @@ h3 {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-.input-password{
+.input-password {
     padding:3px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -343,10 +349,7 @@ h3 {
     display: flex;
     font-family: 'Quicksand', sans-serif;
 }
-.no-car-display{
-    display: flex;
-    margin-bottom: -50px;   
-}
+
 
 
 /* === Index/adminhome === */
@@ -638,7 +641,7 @@ select {
 
 .user-icon{
     margin-top: 35px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 .btn-delete-account{
@@ -671,6 +674,7 @@ select {
 .about-text
 {
     margin-top: 30px;
+    font-size: 21px;
 }
 
 .p-about{
@@ -711,4 +715,12 @@ input.btn{
 
 .carousel-item > img{
     border-radius: 3px;
+}
+
+.div-user_info {
+    font-size: 22px;
+}
+
+.div-user_info-username{
+    margin-right: -40px;
 }
