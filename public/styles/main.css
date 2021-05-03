@@ -672,11 +672,20 @@ select {
 
 .p-addcars{
     font-size: 21px;
-
+}
+.navbar-brand-about
+{
+    display: flex;
+    margin-top: 50px;
+    color: rgb(44, 41, 41);
+}
+.about-text
+{
+    margin-top: 30px;
 }
 
 .p-about{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .div-nav-welcome{
