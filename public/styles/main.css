@@ -616,17 +616,7 @@ select {
 .btn-delete-account{
     margin-top: 35px;
 }
-s
-.div-btn-signup{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.a-btn-signup {
-    width: 300px;
-    padding: 10px;
-    margin-top: 30px;
-}
+
 
 .form-select-car-manufacturer{
     margin-left: -9px;
@@ -702,4 +692,17 @@ input.btn{
 
 .navbar-brand-site{
     margin-top: 7px;
+}
+
+
+/* == sign up button welcome page === */
+.div-btn-signup{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.a-btn-signup {
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
 }
