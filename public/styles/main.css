@@ -548,14 +548,12 @@ input[type=email]{
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-
 }
 
 .form-addnew > input {
     width: 200px;
     padding: 5px;
     margin-top: 10px;
-    
 }
 
 .div-addnew{
@@ -578,7 +576,6 @@ input[type=email]{
     width: 100vw;
     display: flex;
     justify-content: center;
-
 }
 
 .article-about > p {
@@ -606,7 +603,6 @@ select {
 
 .p-user-info{
     font-weight: bold;
-    
 }
 
 .span-needs-space{
@@ -622,6 +618,7 @@ select {
 .btn-delete-account{
     margin-top: 35px;
 }
+s
 .div-btn-signup{
     display: flex;
     justify-content: center;
@@ -646,13 +643,12 @@ select {
     margin-top: 50px;
     color: rgb(44, 41, 41);
 }
-.about-text
-{
+.about-textc {
     margin-top: 30px;
     font-size: 21px;
 }
 
-.p-about{
+.p-about {
     margin-top: 20px;
 }
 
