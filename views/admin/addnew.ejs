@@ -3,11 +3,12 @@
     <body>
         <%- include ("../partials/navbarPartial.ejs"); %>
             <main>
-                <section class="section-header-addnew">
-                    <h2 class="header">Add New Car</h2>
-                </section>
 
+                <h2 class="header">Add New Car</h2>
+
+                <!-- Add New Car Form -->
                 <section class="section-form-addnew">
+
                     <form class="form-addnew" action="/addnew" method="Post">
                         <div class="div-addnew">
                             <label for="manufacturer">Make:</label>
@@ -31,7 +32,9 @@
                         </div>
                         <input class="btn btn-dark input-addnew" type="submit" value="Add Car">
                     </form>
+
                 </section>
+
             </main>
     </body>
 

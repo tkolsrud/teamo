@@ -5,10 +5,11 @@
             <main>
                 <h2 class="header">Browse Cars</h2>
 
+                <!-- Dropdown Menus -->
                 <Section class="section-select-car">
+
                     <form class="form-select-car form-select-car-manufacturer" action="" method="GET">
                         <label class="label-dropdown" for="car-select">Filter By Manufacturer:</label>
-
                         <select class="select-car" name="manufacturer" id="" onchange="this.form.submit()">
                             <option value="">Choose A Manufacturer</option>
                             <option value="Ford">Ford</option>
@@ -52,10 +53,15 @@
                         </select>
                     </form>
                 </Section>
+
+                <!-- Add New Car Button -->
                 <div class="div-addnew">
                     <a class="btn btn-dark a-btn-signup" href="/addnew" role="button">Add New Car</a>
                 </div>
+
+                <!-- Card Gallery -->
                 <section class="gallery">
+
                     <% if(!cars.length) {%>
                         <p>Select By Make, Country, or Year!</p>
                         <% } %>
@@ -80,9 +86,6 @@
                                 </a>
                                 <% }) %>
                 </section>
-
-
-
 
             </main>
     </body>

@@ -2,23 +2,31 @@
 
     <body>
         <%- include ("../partials/welcomenav.ejs"); %>
-            <h2 class="header">Sign-in</h2>
-            <!--Username and Password-->
-            <form id="form-login" class="form-login" action="/login" method="POST">
+            <main>
 
-                <div class="div-login">
-                    <label for="email">Email:</label>
-                    <input type="email" class="input-email" placeholder="Email" name="email">
-                </div>
+                <h2 class="header">Sign-in</h2>
 
-                <div class="div-login">
-                    <label for="password">Password:</label>
-                    <input id="input-login_password" type="password" class="input-password" placeholder="Password"
-                        name="password">
-                </div>
-                <span id="span-invalid-password" class="span-invalid-password"></span>
-                <input class="btn btn-dark input-login" type="submit" value="Submit">
-            </form>
+
+
+                <!-- Login Form -->
+                <form id="form-login" class="form-login" action="/login" method="POST">
+
+                    <div class="div-login">
+                        <label for="email">Email:</label>
+                        <input type="email" class="input-email" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="div-login">
+                        <label for="password">Password:</label>
+                        <input id="input-login_password" type="password" class="input-password" placeholder="Password"
+                            name="password">
+                    </div>
+                    <span id="span-invalid-password" class="span-invalid-password"></span>
+                    <input class="btn btn-dark input-login" type="submit" value="Submit">
+
+                </form>
+
+            </main>
     </body>
 
     </html>
