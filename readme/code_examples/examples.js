@@ -20,3 +20,4 @@ router.put('/garage/:id', (req, res) => {
     });
 });
 
+// $pull and you can use .remove without deleting from db
