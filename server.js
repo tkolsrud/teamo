@@ -13,7 +13,6 @@ const app = express();
 
 /* === Configuration === */
 require('dotenv').config();
-const PORT = 5000;
 
 app.set("view engine", "ejs");
 
@@ -85,8 +84,6 @@ app.use('/', controllers.admin);
 
 
 /* === Server Listener === */
-app.listen(PORT, function () {
-    console.log(`Car shop is live at http://localhost:${PORT}/`);
-});
+app.listen(process.env.PORT || 5000);
 
 app.use(express.static(`public`))
