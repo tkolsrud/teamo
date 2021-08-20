@@ -21,6 +21,7 @@ router.post('/register', async function (req, res) {
         }
 
         if (req.body.retypepassword !== req.body.password) {
+
             return res.render('auth/retype');
         }
 
